@@ -49,8 +49,7 @@ Feynman UNO Flip is an educational card game that brings the complexities of par
 
 <p float="left">
   <img src="uno_game/static/images/MainPageIMG.png" width="100" />
-  <img src="uno_game/static/images/InGameIMG.PNG" width="100" /> 
-  <img src="uno_game/static/images/AdminPageIMG.JPG" width="100" />
+  <img src="uno_game/static/images/InGameIMG.PNG" width="100" />
 </p>
 
 
@@ -78,6 +77,7 @@ Admins can manage games through the admin controls page. The admin interface inc
  - Reset games
  - Remove inactive games
  - Monitor active games and players
+ <img src="uno_game/static/images/AdminPageIMG.JPG" width="100" />
 
 ## Known Issues and TODOs
 - **Animations**: Implement card animations for smoother gameplay.
