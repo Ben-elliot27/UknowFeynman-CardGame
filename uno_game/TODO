@@ -1,0 +1,64 @@
+"""
+ipconfig - find IP address running on
+TODO:
+- Animations for cards
+- when flipping doesn't flip other players :: might become a feature cause cba to fix that
+- When flipping to other side locally it doesn't keep the highlighting
+- Interactive instructions
+- Main host so that they can restart game etc. if a new person joins rather than always restarting
+FIX POSITIONING OF CARDS FOR IOS
+Make a game manager with custom game_id
+
+Need to make it clearer what happens when playing on H
+
+GAME RULES CURRENTLY IMPLEMENTED:
+
+Can play same color or same particle type
+If playing on a boson played card needs to be the same class as the bottom card
+If a weak boson or photon are played as long as charge conservation holds and particle is not a boson
+If a gluon is played particle needs to be exactly the same type.
+
+Features:
+Tutorial
+Main host so that they can restart game etc. if a new person joins rather than always restarting
+Add icons st when uno pressed it actually says something -- also going to be some edge cases with the buttons depending on timings
+CORRECTLY Allow play carrying on if decay button either not pressed or not challenged
+Hadron cards
+Currently making it s.t. the button appears whenever it is someones go rather than if there is a valid play
+hadron cards
+Add actual hints as to why a move was denied
+
+
+COLOR CHANGE:
+BLUE -> Purple
+Yellow -> orange
+Green -> cyan
+Red -> pink
+
+
+Instructions for game:
+
+Click on deck to draw card
+Click on deck to draw card(s) when can't play on a boson
+Obvs neutralising stuff
+
+Need to reset the look of the cards when mutliplay is disabled
+
+
+Fix hover
+More than 3 people on possitioning of opponent hands
+
+ADMIN PAGE:
+
+Reset button
+Auto get rid of inactive games that haven't been updated in a while
+
+
+
+
+Potential issues:
+You can join game with someone else's hands if you input same player name as them -- its a feature now
+Flip button doesnt change so has to be pressed twice -- its a feature now cause cba to fix it
+For some reason the play card function gets called like 6 million times but draw card doesnt
+
+

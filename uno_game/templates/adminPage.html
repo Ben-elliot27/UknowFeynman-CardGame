@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+    <title>Admin Page</title>
+</head>
+<body>
+    <img id="logo" src="{{ url_for('static', filename='images/main_logo.jpeg') }}" alt="Game Logo" width="100px">
+    <h1>Game Administration</h1>
+    <div id="games"></div>
+    <div id="gameDetails"></div>
+    <form id="addCardForm">
+        <label for="frontColor">Front Color:</label>
+        <input type="text" id="frontColor" name="frontColor" required><br><br>
+
+        <label for="frontValue">Front Value:</label>
+        <input type="text" id="frontValue" name="frontValue" required><br><br>
+
+        <label for="backColor">Back Color:</label>
+        <input type="text" id="backColor" name="backColor" required><br><br>
+
+        <label for="backValue">Back Value:</label>
+        <input type="text" id="backValue" name="backValue" required><br><br>
+
+        <label for="backValue">GameId:</label>
+        <input type="text" id="gameId" name="GameId" required><br><br>
+
+        <label for="backValue">Player Name:</label>
+        <input type="text" id="playerName" name="playerName" required><br><br>
+
+        <button type="submit">Add Card</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+
+
+</body>
+</html>

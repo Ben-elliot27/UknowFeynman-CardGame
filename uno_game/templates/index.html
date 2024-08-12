@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>UNO Flip Game</title>
+</head>
+<body>
+    <img id="logo" src="{{ url_for('static', filename='images/main_logo.jpeg') }}" alt="Game Logo">
+    <h1>UNO Flip Game</h1>
+    <div id="menu">
+        <button class="btn" onclick="createGame()">Create Game</button>
+        <input class="input" type="text" id="gameId" placeholder="Enter Game ID">
+        <button class="btn" onclick="joinGame()">Join Game</button>
+        <div id="Tutorial">
+            <button class="instruct_btn" onclick="startTutorial()">Tutorial</button>
+        </div>
+    </div>
+    <div id="gameArea" style="display: none;">
+        <div id="uno button">
+                    <button id="decayButton" class="uno_btn" onclick="decayPressed()" disabled style="display: none">Decay!</button>
+                    <button id="challengeButton" class="uno_btn" onclick="challengePressed()" disabled style="display: none">Challenge!</button>
+        </div>
+        <button class="leave_btn" onclick="leaveGame()">Leave Game</button>
+        <div id="gameInfo"></div>
+            <div id="opponentHandsContainer">
+            <div id="centerPile" style="top: 20px;">
+                <div id="drawPile" class="stack shuffling" onclick="drawCard()">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <img src="{{ url_for('static', filename='uno_cards/card_back.png') }}" alt="Draw Pile">
+                    <!-- Add more card images for stack effect as needed -->
+                </div>
+                <div id="discardPileContainer" class="stack">
+                    <div id="colorChangeButton" class="color-change">
+                        <button class="color-btn quarter" id="redBtn" disabled style="display: none" onclick="chooseColor('red')"></button>
+                        <button class="color-btn quarter" id="blueBtn" disabled style="display: none" onclick="chooseColor('blue')"></button>
+                        <button class="color-btn quarter" id="greenBtn" disabled style="display: none" onclick="chooseColor('green')"></button>
+                        <button class="color-btn quarter" id="yellowBtn" disabled style="display: none" onclick="chooseColor('yellow')"></button>
+                    </div>
+                    <div id="discardPile" class="stack">
+                        <!-- Discard pile cards will be dynamically updated -->
+                    </div>
+                </div>
+            </div>
+         </div>
+        <button class="btn flip" id="flipButton" onclick="toggleBackside()"><span class="flip-symbol">🔄</span> See Anti-Matter </button>
+        <div id="playerHand"></div>
+        <button id="multiplay" class="btn" style="width: 80px; height: 30px; padding: 0 0; display: none" disabled onclick="multiPlayPressed()">Multi-Play</button>
+        <input type="hidden" id="gameIdHidden">
+        <input type="hidden" id="playerNameHidden">
+    </div>
+
+    <button class="instruct_btn" id="instructions-toggle" onclick="toggleInstructions()">Show Instructions</button>
+    <div id="instructions" class="hidden">
+        <h2>Instructions</h2>
+        <ul>
+            <li>To create a new game, click "Create Game" and enter your name.</li>
+            <li>To join an existing game, enter the Game ID and click "Join Game".</li>
+            <li>Once in the game, you can play cards by clicking on them.</li>
+            <li>Click the draw pile to draw a new card.</li>
+        </ul>
+        <div id="flip-mechanic">
+            <p>Flip Mechanic: When a flip card is played, all cards in play are flipped to the opposite side. The flip side has different colors (pink, cyan, orange, purple) and values.</p>
+        </div>
+        <h3>Detailed Instructions</h3>
+        <div id="google-docs-instructions">
+            <img src="{{ url_for('static', filename='instructions/page1.png') }}" alt="Instruction Page 1">
+            <img src="{{ url_for('static', filename='instructions/page2.png') }}" alt="Instruction Page 2">
+            <img src="{{ url_for('static', filename='instructions/page3.png') }}" alt="Instruction Page 3">
+            <img src="{{ url_for('static', filename='instructions/page4.png') }}" alt="Instruction Page 4">
+            <img src="{{ url_for('static', filename='instructions/page5.png') }}" alt="Instruction Page 5">
+            <img src="{{ url_for('static', filename='instructions/page6.png') }}" alt="Instruction Page 6">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
