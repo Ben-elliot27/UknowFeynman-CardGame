@@ -30,8 +30,8 @@ Feynman UNO Flip is an educational card game that brings the complexities of par
 
 
 <p float="left">
-  <img src="uno_game/static/images/MainPageIMG.png" width="200" />
-  <img src="uno_game/static/images/InGameIMG.PNG" width="200" />
+  <img src="uno_game/static/images/MainPageIMG.png" width="400" />
+  <img src="uno_game/static/images/InGameIMG.PNG" width="457" />
 </p>
 
 
