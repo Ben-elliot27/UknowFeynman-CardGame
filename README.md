@@ -74,10 +74,12 @@ Playing the Game:
 
 ## Admin Controls
 Admins can manage games through the admin controls page. The admin interface includes features to:
+<p float="left">
  - Reset games
  - Remove inactive games
  - Monitor active games and players
  <img src="uno_game/static/images/AdminPageIMG.JPG" width="100" />
+</p>
 
 ## Known Issues and TODOs
 - **Animations**: Implement card animations for smoother gameplay.
