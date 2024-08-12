@@ -1,6 +1,8 @@
 # Feynman UNO Flip - A Particle Physics Card Game
 
-![Game Logo](uno_game/static/images/main_logo.jpeg)
+<div style="text-align: center;">
+    <img src="uno_game/static/images/main_logo.jpeg" alt="Main Page Image" width="40%">
+</div>
 
 Feynman UNO Flip is an educational card game that brings the complexities of particle physics to life through interactive gameplay. Originally developed as a physical card game for a university project in collaboration with lecturers, researchers, and UCL (University College London) Business, this virtual version aims to make the game accessible to a broader audience. Inspired by the interactive sessions held with GCSE and A-Level students, this online version allows players to learn particle physics concepts anywhere in the world.
 
@@ -25,9 +27,17 @@ Feynman UNO Flip is an educational card game that brings the complexities of par
 - **Customizable Game Settings**: Admin controls allow for game management and customization.
 - **Interactive Tutorial**: Step-by-step guide to help new players learn the rules and mechanics.
 
-![Game Screenshot](uno_game/static/images/MainPageIMG.png)
-![Game Screenshot](uno_game/static/images/InGameIMG.PNG)
-![Game Screenshot](uno_game/static/images/AdminPageIMG.JPG)
+
+<div style="display: flex; align-items: flex-start;">
+    <div style="flex: 1;">
+        <img src="uno_game/static/images/MainPageIMG.png" alt="Main Page Image" width="100%">
+        <img src="uno_game/static/images/InGameIMG.PNG" alt="In-Game Image" width="100%">
+    </div>
+    <div style="flex: 1; margin-left: 20px;">
+        <img src="uno_game/static/images/AdminPageIMG.JPG" alt="Admin Page Image" width="70%">
+    </div>
+</div>
+
 
 ## Game Rules
 
