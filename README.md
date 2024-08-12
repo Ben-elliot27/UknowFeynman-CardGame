@@ -1,8 +1,9 @@
 # Feynman UNO Flip - A Particle Physics Card Game
 
-<div style="text-align: center;">
+<p align="center">
     <img src="uno_game/static/images/main_logo.jpeg" alt="Main Page Image" width="40%">
-</div>
+</p>
+
 
 Feynman UNO Flip is an educational card game that brings the complexities of particle physics to life through interactive gameplay. Originally developed as a physical card game for a university project in collaboration with lecturers, researchers, and UCL (University College London) Business, this virtual version aims to make the game accessible to a broader audience. Inspired by the interactive sessions held with GCSE and A-Level students, this online version allows players to learn particle physics concepts anywhere in the world.
 
