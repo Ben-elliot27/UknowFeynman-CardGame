@@ -65,6 +65,7 @@ Admins can manage games through the admin controls page. The admin interface inc
 We welcome contributions to enhance the game. Please submit issues and pull requests to the repository. Before contributing, ensure you follow the code of conduct.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
 
+##
 Developed with ❤️ by the Feynman UNO Flip team.
