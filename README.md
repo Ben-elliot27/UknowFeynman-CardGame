@@ -1,7 +1,7 @@
 # Feynman UNO Flip - A Particle Physics Card Game
 
 <p align="center">
-    <img src="uno_game/static/images/main_logo.jpeg" alt="Main Page Image" width="40%">
+    <img src="uno_game/static/images/main_logo-transparent.png" alt="Main Page Image" width="30%">
 </p>
 
 
@@ -29,27 +29,9 @@ Feynman UNO Flip is an educational card game that brings the complexities of par
 - **Interactive Tutorial**: Step-by-step guide to help new players learn the rules and mechanics.
 
 
-[//]: # (<p style="display: flex; justify-content: space-between; align-items: flex-start;">)
-
-[//]: # (    <span style="flex: 1; margin-right: 20px;">)
-
-[//]: # (        <img src="uno_game/static/images/MainPageIMG.png" alt="Main Page Image" style="width: 50%;">)
-
-[//]: # (        <img src="uno_game/static/images/InGameIMG.PNG" alt="In-Game Image" style="width: 50%;">)
-
-[//]: # (    </span>)
-
-[//]: # (    <span style="flex: 1;">)
-
-[//]: # (        <img src="uno_game/static/images/AdminPageIMG.JPG" alt="Admin Page Image" style="width: 50%;">)
-
-[//]: # (    </span>)
-
-[//]: # (</p>)
-
 <p float="left">
-  <img src="uno_game/static/images/MainPageIMG.png" width="100" />
-  <img src="uno_game/static/images/InGameIMG.PNG" width="100" />
+  <img src="uno_game/static/images/MainPageIMG.png" width="200" />
+  <img src="uno_game/static/images/InGameIMG.PNG" width="200" />
 </p>
 
 
@@ -74,12 +56,11 @@ Playing the Game:
 
 ## Admin Controls
 Admins can manage games through the admin controls page. The admin interface includes features to:
-<p float="left">
  - Reset games
  - Remove inactive games
  - Monitor active games and players
- <img src="uno_game/static/images/AdminPageIMG.JPG" width="100" />
-</p>
+
+<img src="uno_game/static/images/AdminPageIMG.JPG" width="100" />
 
 ## Known Issues and TODOs
 - **Animations**: Implement card animations for smoother gameplay.
