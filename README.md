@@ -70,7 +70,8 @@ Admins can manage games through the admin controls page. The admin interface inc
 - **Game Manager**: Add a game manager feature for better control over game sessions.
 - **Button Edge Cases**: Address edge cases related to button press timings.
 - **Playing and Drawing on a H card**: Sometimes the first click when drawing on a Higgs card draws too many cards. Need to delay time spans between cards being drawn on a Higgs to signify what is happening. Currently cannot play anything to neutralise a Higgs and error messages are confusing.
-- **Game Resetting**: Other players visually don't reset correctly - still shows other players as the same amount of cards as before, however this updates as soon as any action is taken (visual update not called when reseting game). 
+- **Game Resetting**: Other players visually don't reset correctly - still shows other players as the same amount of cards as before, however this updates as soon as any action is taken (visual update not called when reseting game).
+- **Multi-Play Error Messages**: Get an error message saying not your turn when trying multi-play. This should not happen, but does not affect gameplay.
 
 ## Contributing
 We welcome contributions to enhance the game. Please submit issues and pull requests to the repository. Before contributing, ensure you follow the code of conduct.
