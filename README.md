@@ -18,7 +18,6 @@ Feynman UNO Flip is an educational card game that brings the complexities of par
 - [Admin Controls](#admin-controls)
 - [Known Issues and TODOs](#known-issues-and-todos)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -74,8 +73,6 @@ Admins can manage games through the admin controls page. The admin interface inc
 ## Contributing
 We welcome contributions to enhance the game. Please submit issues and pull requests to the repository. Before contributing, ensure you follow the code of conduct.
 
-## License
-This project is licensed under the MIT License.
 
 ##
 Developed with ❤️ by the Feynman UNO Flip team.
