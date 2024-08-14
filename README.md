@@ -10,6 +10,13 @@ Feynman UNO Flip is an educational card game that brings the complexities of par
 **Live Game URL:** [uknowfeynman.co.uk](http://www.uknowfeynman.co.uk)  
 **Admin Controls Page:** [uknowfeynman.co.uk/admin_controlls_6aSymmetryInPhysics](http://www.uknowfeynman.co.uk/admin_controlls_6aSymmetryInPhysics)
 
+
+
+
+https://github.com/user-attachments/assets/ef893aa7-16bc-4475-8a84-3da9181ae9ca
+
+
+
 ## Table of Contents
 
 - [Features](#features)
@@ -45,6 +52,12 @@ The game follows a set of unique rules inspired by particle physics principles:
 
 For a complete list of rules and gameplay mechanics, please refer to the in-game tutorial or the rules section in the app.
 
+
+
+https://github.com/user-attachments/assets/60eced3f-f4b1-4dec-a5f2-ffb5bc41ee3b
+
+
+
 ## Usage
 Playing the Game:
 
@@ -54,6 +67,12 @@ Playing the Game:
 - Follow the in-game prompts and tutorials to understand the gameplay mechanics.
 
 ## Admin Controls
+
+
+
+https://github.com/user-attachments/assets/bc5d9f9b-d912-4365-b083-b2ad8908a2b4
+
+
 Admins can manage games through the admin controls page. The admin interface includes features to:
  - Reset games
  - Remove inactive games
