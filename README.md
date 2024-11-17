@@ -10,6 +10,13 @@ Feynman UNO Flip is an educational card game that brings the complexities of par
 **Live Game URL:** [uknowfeynman.co.uk](http://www.uknowfeynman.co.uk)  
 **Admin Controls Page:** [uknowfeynman.co.uk/admin_controlls_6aSymmetryInPhysics](http://www.uknowfeynman.co.uk/admin_controlls_6aSymmetryInPhysics)
 
+
+
+
+https://github.com/user-attachments/assets/ef893aa7-16bc-4475-8a84-3da9181ae9ca
+
+
+
 ## Table of Contents
 
 - [Features](#features)
@@ -18,7 +25,6 @@ Feynman UNO Flip is an educational card game that brings the complexities of par
 - [Admin Controls](#admin-controls)
 - [Known Issues and TODOs](#known-issues-and-todos)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -30,8 +36,8 @@ Feynman UNO Flip is an educational card game that brings the complexities of par
 
 
 <p float="left">
-  <img src="uno_game/static/images/MainPageIMG.png" width="200" />
-  <img src="uno_game/static/images/InGameIMG.PNG" width="200" />
+  <img src="uno_game/static/images/MainPageIMG.png" width="360" />
+  <img src="uno_game/static/images/InGameIMG.PNG" width="411" />
 </p>
 
 
@@ -46,6 +52,12 @@ The game follows a set of unique rules inspired by particle physics principles:
 
 For a complete list of rules and gameplay mechanics, please refer to the in-game tutorial or the rules section in the app.
 
+
+
+https://github.com/user-attachments/assets/60eced3f-f4b1-4dec-a5f2-ffb5bc41ee3b
+
+
+
 ## Usage
 Playing the Game:
 
@@ -55,6 +67,12 @@ Playing the Game:
 - Follow the in-game prompts and tutorials to understand the gameplay mechanics.
 
 ## Admin Controls
+
+
+
+https://github.com/user-attachments/assets/bc5d9f9b-d912-4365-b083-b2ad8908a2b4
+
+
 Admins can manage games through the admin controls page. The admin interface includes features to:
  - Reset games
  - Remove inactive games
@@ -70,12 +88,13 @@ Admins can manage games through the admin controls page. The admin interface inc
 - **Card Positioning on iOS**: Fix card positioning issues on iOS devices.
 - **Game Manager**: Add a game manager feature for better control over game sessions.
 - **Button Edge Cases**: Address edge cases related to button press timings.
+- **Playing and Drawing on a H card**: Sometimes the first click when drawing on a Higgs card draws too many cards. Need to delay time spans between cards being drawn on a Higgs to signify what is happening. Currently cannot play anything to neutralise a Higgs and error messages are confusing.
+- **Game Resetting**: Other players visually don't reset correctly - still shows other players as the same amount of cards as before, however this updates as soon as any action is taken (visual update not called when reseting game).
+- **Multi-Play Error Messages**: Get an error message saying not your turn when trying multi-play. This should not happen, but does not affect gameplay.
 
 ## Contributing
 We welcome contributions to enhance the game. Please submit issues and pull requests to the repository. Before contributing, ensure you follow the code of conduct.
 
-## License
-This project is licensed under the MIT License.
 
 ##
 Developed with ❤️ by the Feynman UNO Flip team.
