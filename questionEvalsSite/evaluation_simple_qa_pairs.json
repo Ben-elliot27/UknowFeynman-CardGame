@@ -1,0 +1,2186 @@
+[
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AMAModules.txt",
+    "question": "What are Filler modules in AMA used for?",
+    "answer": "Filler modules in AMA are used to translate information contained inside AOD collection data to the AMA event data model.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:35.884166",
+    "id": "0355044a-26a8-4ddd-919a-ab2bda7465f1"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AMAModules.txt",
+    "question": "Where should all fillers be stored in AMAAthena?",
+    "answer": "All fillers should be stored in the AMAAthena/Filler directory.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:35.884166",
+    "id": "1862799f-c68e-493d-b0ec-463572c22faf"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AMAModules.txt",
+    "question": "What is the purpose of the AMAEventCounter module?",
+    "answer": "The AMAEventCounter module prints a message in regular intervals with the index of the currently processed event.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:35.884166",
+    "id": "f385f00c-4775-48ee-885e-b43a28f6a72c"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BB5Gnam.txt",
+    "question": "What does the page BB5Gnam describe?",
+    "answer": "The page describes the online monitoring of NSW data starting with the MM cosmics taken at BB5.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:39.152935",
+    "id": "c12d9928-72de-416d-ac8f-3252a2e731be"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BB5Gnam.txt",
+    "question": "How can one set up the dbg release for Gnam?",
+    "answer": "To set up the dbg release, cd to the package (not to the build directory), export CMTCONFIG=x86_64-centos7-gcc11-dbg, and do cmake_config.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:39.152935",
+    "id": "4ca93de7-39d0-4db7-a38f-2a45d425b657"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BB5Gnam.txt",
+    "question": "Where are histograms located and viewed in the Gnam program?",
+    "answer": "Histograms can be seen in the oh_display program, currently located in the /SHIFT/ directory because Gnam crashes when other directories are used.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:39.152935",
+    "id": "95167e56-cbbb-4e5e-9232-e28f083e35f4"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\ADCSiteStatusBoardDevSiteNamePuzzle.txt",
+    "question": "What are some examples of sites mentioned as not in the panda_queues list?",
+    "answer": "Examples include CERN-DPMTEST, GRIF, SIGNET, SWT2_CPB, and ru-Moscow-MEPHI-LCG2.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:42.381893",
+    "id": "970d0c38-8de5-4beb-b606-c6f6b078901c"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\ADCSiteStatusBoardDevSiteNamePuzzle.txt",
+    "question": "What is the implication of the site INFN-MILANO not being in the agislist?",
+    "answer": "INFN-MILANO does not exist anymore, so it should be removed.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:42.381893",
+    "id": "ecfd3a8c-ae60-4e18-a2a1-1c0942889bb9"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to make the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:46.384210",
+    "id": "cfebf34a-96fc-494e-baeb-88a056ef94ca"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git be used in conjunction with Athena packages in the project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit version with respect to a project they are building against, which can be useful knowledge in the run-up to conference deadlines.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:46.384210",
+    "id": "413a2f4a-4f59-48bb-9494-56a3737f97dc"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AnalysisTopR21Tutorial.txt",
+    "question": "Why might analyzers need to use a package filter when working with Athena packages?",
+    "answer": "Analyzers might need to use a package filter to include only the specific packages they need from Athena, especially when using different packages from different git commits.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:46.384210",
+    "id": "a843a6fb-3522-4153-92c0-ab24baa2d755"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AlfaRuns.txt",
+    "question": "What are the main operational parameters for the ALFA program in 2015?",
+    "answer": "The main operational parameters for the ALFA program in 2015 are 90m optics, 2 bunches with around 7E10 protons/bunch, and a mu around 0.08.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:51.377485",
+    "id": "707c5d8b-a82a-40ce-8cb2-406540067daa"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AlfaRuns.txt",
+    "question": "How does operating ALFA with physics optics impact the setup time and involvement from ALFA experts?",
+    "answer": "Operating ALFA with physics optics would require new machine loss maps, which would take additional setup time and involvement from ALFA experts.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:51.377485",
+    "id": "21950cc3-6eb6-4fa1-95d7-56f9907b9390"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AlfaRuns.txt",
+    "question": "What flag needs to be set to 'True' to run the HLT monitoring of ROB data quality?",
+    "answer": "To run the HLT monitoring of ROB data quality, the flag 'enableALFAMon' has to be 'True'.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:51.377485",
+    "id": "cc62a426-66ed-4f33-80b5-26550d299ea3"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BCMOfflineAnalysis.txt",
+    "question": "What type of data is collected with the BCM modules for BCM Offline Analysis?",
+    "answer": "The data collected with the BCM modules are stored in a data container and are readily accessible.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:55.027873",
+    "id": "7c62db6a-92f4-4c80-909d-c15e4257dc01"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BCMOfflineAnalysis.txt",
+    "question": "How can the ESD files be skimmed to only store necessary information?",
+    "answer": "In order to skim the ESD files, the BCMSkimmer is run on a collection of ESD files to only store the needed information.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:55.027873",
+    "id": "ec914311-718b-40c0-95b6-65214bf3e69f"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BCMOfflineAnalysis.txt",
+    "question": "Where can the ESD files be found?",
+    "answer": "The ESD files can be found with the AMI Dataset Search tool.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:55.027873",
+    "id": "6c5597d0-f912-4984-8b83-e56f34868430"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AMAModules.txt",
+    "question": "What are Filler modules in AMA used for?",
+    "answer": "Filler modules in AMA are used to translate information contained inside AOD collection data to the AMA event data model.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:35.884166",
+    "id": "f04c346b-6949-47da-8215-01214820f51a"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AMAModules.txt",
+    "question": "Where should all fillers be stored in AMAAthena?",
+    "answer": "All fillers should be stored in the AMAAthena/Filler directory.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:35.884166",
+    "id": "eaa1f88d-edfc-41c9-adfc-a8f1d24eaf0d"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AMAModules.txt",
+    "question": "What is the purpose of the AMAEventCounter module?",
+    "answer": "The AMAEventCounter module prints a message in regular intervals with the index of the currently processed event.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:35.884166",
+    "id": "053d7e9d-fb79-4874-b1d5-813accac06d1"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BB5Gnam.txt",
+    "question": "What does the page BB5Gnam describe?",
+    "answer": "The page describes the online monitoring of NSW data starting with the MM cosmics taken at BB5.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:39.152935",
+    "id": "81e69318-f263-4567-8fe1-d621b964d574"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BB5Gnam.txt",
+    "question": "How can one set up the dbg release for Gnam?",
+    "answer": "To set up the dbg release, cd to the package (not to the build directory), export CMTCONFIG=x86_64-centos7-gcc11-dbg, and do cmake_config.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:39.152935",
+    "id": "28c2069c-64dd-48c0-af67-4156d2509b55"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BB5Gnam.txt",
+    "question": "Where are histograms located and viewed in the Gnam program?",
+    "answer": "Histograms can be seen in the oh_display program, currently located in the /SHIFT/ directory because Gnam crashes when other directories are used.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:39.152935",
+    "id": "24706a17-b3f6-4b85-9c8b-b4f4a7b56d21"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\ADCSiteStatusBoardDevSiteNamePuzzle.txt",
+    "question": "What are some examples of sites mentioned as not in the panda_queues list?",
+    "answer": "Examples include CERN-DPMTEST, GRIF, SIGNET, SWT2_CPB, and ru-Moscow-MEPHI-LCG2.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:42.381893",
+    "id": "9fcec387-9361-4394-8211-989714a704c8"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\ADCSiteStatusBoardDevSiteNamePuzzle.txt",
+    "question": "What is the implication of the site INFN-MILANO not being in the agislist?",
+    "answer": "INFN-MILANO does not exist anymore, so it should be removed.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:42.381893",
+    "id": "db826e58-31cd-4747-ac38-ea91d9878af0"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to make the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:46.384210",
+    "id": "87d5f999-4dc4-4e00-8e39-6c7122152be8"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git be used in conjunction with Athena packages in the project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit version with respect to a project they are building against, which can be useful knowledge in the run-up to conference deadlines.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:46.384210",
+    "id": "1e18e241-d271-49d6-baf9-5f638d224cc8"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AnalysisTopR21Tutorial.txt",
+    "question": "Why might analyzers need to use a package filter when working with Athena packages?",
+    "answer": "Analyzers might need to use a package filter to include only the specific packages they need from Athena, especially when using different packages from different git commits.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:46.384210",
+    "id": "0595d0d3-f2bb-4df3-8d58-b4d4beeeabce"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AlfaRuns.txt",
+    "question": "What are the main operational parameters for the ALFA program in 2015?",
+    "answer": "The main operational parameters for the ALFA program in 2015 are 90m optics, 2 bunches with around 7E10 protons/bunch, and a mu around 0.08.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:51.377485",
+    "id": "768b64f8-87fb-4ef9-ac3a-f3a83ffc264e"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AlfaRuns.txt",
+    "question": "How does operating ALFA with physics optics impact the setup time and involvement from ALFA experts?",
+    "answer": "Operating ALFA with physics optics would require new machine loss maps, which would take additional setup time and involvement from ALFA experts.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:51.377485",
+    "id": "8e5beced-e4a0-49ee-a93d-2babbf970d7f"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AlfaRuns.txt",
+    "question": "What flag needs to be set to 'True' to run the HLT monitoring of ROB data quality?",
+    "answer": "To run the HLT monitoring of ROB data quality, the flag 'enableALFAMon' has to be 'True'.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:51.377485",
+    "id": "16dcb8b5-e3b9-497c-b505-3b25b01f5037"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BCMOfflineAnalysis.txt",
+    "question": "What type of data is collected with the BCM modules for BCM Offline Analysis?",
+    "answer": "The data collected with the BCM modules are stored in a data container and are readily accessible.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:55.027873",
+    "id": "9db01c1a-1c38-4870-8d52-6ae13c24de15"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BCMOfflineAnalysis.txt",
+    "question": "How can the ESD files be skimmed to only store necessary information?",
+    "answer": "In order to skim the ESD files, the BCMSkimmer is run on a collection of ESD files to only store the needed information.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:55.027873",
+    "id": "92b275fd-4199-4a73-8ef9-6d66f94687bf"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BCMOfflineAnalysis.txt",
+    "question": "Where can the ESD files be found?",
+    "answer": "The ESD files can be found with the AMI Dataset Search tool.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:55.027873",
+    "id": "315d5c4c-5c52-462e-b64f-7e2f86e0e31e"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BcmPostMortem.txt",
+    "question": "What are the three roles of the ATLAS BCM post-mortem software package?",
+    "answer": "The three roles are to handle communication with the FPGAs during buffer dump, to analyze the resulting buffer files, and to publish the results within ATLAS and send them to the LHC PM servers.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:23:58.941715",
+    "id": "d2964bb7-e86e-4dc6-84ef-980804264c81"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BcmPostMortem.txt",
+    "question": "How does the Dumpster program handle the buffer dump process?",
+    "answer": "When an abort is requested, the Dumpster program freezes the circular data buffers in the BCM FPGAs, receives ready packets from the FPGAs, creates files to store buffer data, reads the PM event timestamp, and starts receiving data packets to store into the files.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:23:58.941715",
+    "id": "8d45bfef-c18b-4df2-9f37-56e49756fd13"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\BcmPostMortem.txt",
+    "question": "Where can the detailed plots of the pulses for interesting bunch crossings be found?",
+    "answer": "The detailed plots can be found in the directory /det/bcm/data/dump_data, with file names following the pattern: bufdump_FPGA1_raw_ddmmyyyy_hhmmss/ and bufdump_FPGA2_raw_ddmmyyyy_hhmmss/.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:23:58.941715",
+    "id": "eaf1fc1f-04ba-49ec-968e-e5d54d5c28ba"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\CSCNRCMonitoring.txt",
+    "question": "Where can the software code related to the monitoring tools for RCE be found?",
+    "answer": "The software code for the monitoring tools for RCE can be found at https://gitlab.cern.ch/atlas-muondaq-csc/CSCNRC/tree/master.",
+    "type": "factual",
+    "created_at": "2024-11-06T11:24:02.979194",
+    "id": "58954b17-74db-4242-98da-d2ea03e6ec07"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\CSCNRCMonitoring.txt",
+    "question": "What is the purpose of the CSC DDC mechanism implemented since July 2017?",
+    "answer": "The CSC DDC mechanism is used to show the status of RCEs in DCS and to power reset them individually.",
+    "type": "interpretative",
+    "created_at": "2024-11-06T11:24:02.979194",
+    "id": "5bb567cc-cd7e-4dfe-bcb7-61c2820a26f5"
+  },
+  {
+    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\CSCNRCMonitoring.txt",
+    "question": "How can one update the IP address of a new control processor in the CSC DAQ system?",
+    "answer": "To update the IP address of a new control processor, one must create a new file with the IP address and port number, upload it to the RCEs, and update the source code using the inet addr copied from the new PC's priv0 interface.",
+    "type": "contextual",
+    "created_at": "2024-11-06T11:24:02.979194",
+    "id": "789e8d01-97bf-4aec-86b9-1d4605b4f2d1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "ceb7af29-7aae-493a-a3bc-bf4ff09ddcb1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "c4f65d5f-81bf-46ff-97eb-5eb0b81bad44"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "8b6dda3b-6b70-4ca5-a108-6f783c94469d"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "7b2894bf-eaef-4077-9fcb-94befb1a1188"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "48810889-dd22-4b58-8879-adb4cc8cd98d"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "6e5febce-63e4-4d94-80bc-7d25a065d233"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "01b9f4fc-4e66-4a08-88cd-4a978e496197"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "ede3deaa-0be2-459d-91ef-65fc4b4311ef"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "What safety training courses are required to take BCM shifts?",
+    "answer": "Level 1-3 at Bldg. 55 and Level 4A",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "dce016d6-2c8f-493d-a015-82dce2f12dae"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "How can shifts be booked in the OTP system for ATLAS/BCM shifts?",
+    "answer": "Log on to the OTP using your EDH user name and account, find 'Book my shifts', choose available dates, click to book shifts, and save the shift booking.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "3e47997d-f13e-4019-aa9a-664a4283b06a"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "c2c82014-b159-4c50-9939-84a4cce25bb4"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "3e88be57-7bd1-4911-81c1-0a333996eb76"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "c7b894d6-fe7e-4e8b-a0cb-f6ca08f455b4"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "2852fbac-b526-457c-902f-cb6ea58da899"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "What safety training courses are required to take BCM shifts?",
+    "answer": "Level 1-3 at Bldg. 55 and Level 4A",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "5472f6aa-46e9-4e30-80e1-d00dbdfd81d3"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "How can shifts be booked in the OTP system for ATLAS/BCM shifts?",
+    "answer": "Log on to the OTP using your EDH user name and account, find 'Book my shifts', choose available dates, click to book shifts, and save the shift booking.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "1caa5904-f782-417b-abed-8e224f282db4"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "Who is operationally responsible for the components in TAG Production and Validation?",
+    "answer": "The question of who is operationally responsible for the components in TAG Production and Validation is addressed in the document.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "07d65370-ae78-4aba-af25-56a49ac0aebb"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "How does one ensure consistency with analysis when defining object selection criteria for tags?",
+    "answer": "The document discusses how to ensure consistency with analysis when defining object selection criteria for tags, specifically in terms of applying the same selection as done on tags to electrons on AOD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "d6ad3ae2-c230-4173-92ff-74bdbc468ca0"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "2c42ef50-0bbf-467a-89f4-98f6b4634fd8"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "631c4a18-c9c5-41dd-95ff-0b19c1344a60"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "083bce29-d5f3-4f97-897b-6c57bc8f85a7"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "d3749d19-e546-404e-98ba-a9a7201c616d"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "What safety training courses are required to take BCM shifts?",
+    "answer": "Level 1-3 at Bldg. 55 and Level 4A",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "f6b2a313-208e-4b99-a6fa-35b85270187c"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "How can shifts be booked in the OTP system for ATLAS/BCM shifts?",
+    "answer": "Log on to the OTP using your EDH user name and account, find 'Book my shifts', choose available dates, click to book shifts, and save the shift booking.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "fa30d071-5e33-4a54-8ddb-1f0995575592"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "Who is operationally responsible for the components in TAG Production and Validation?",
+    "answer": "The question of who is operationally responsible for the components in TAG Production and Validation is addressed in the document.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "11716297-45e3-42c0-a663-f49ef86bf22d"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "How does one ensure consistency with analysis when defining object selection criteria for tags?",
+    "answer": "The document discusses how to ensure consistency with analysis when defining object selection criteria for tags, specifically in terms of applying the same selection as done on tags to electrons on AOD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "e93e6ca9-347b-4fcd-ba08-c51fef5a93a6"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "What is the main purpose of AthenaMP?",
+    "answer": "The main purpose of AthenaMP is to allow running more simultaneous event processors on a given production node to increase event throughput by sharing memory among sub-processes.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "b2156250-7676-4354-8169-798881a214e9"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "How does the Shared Event Queue strategy work in AthenaMP?",
+    "answer": "In the Shared Event Queue strategy, all worker processes have access to a queue filled with event numbers, and they pull event numbers out on a first-come, first-served basis to achieve load balancing.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "05f414ce-861e-459c-8b03-874d979ea3d4"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "3c68ce02-36b0-41c5-b200-82c0a94f8063"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "1d9fee55-6619-4483-a4a5-86ec04b0c1bb"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "3aec2853-0d20-4062-a401-ee1f7dfb03c5"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "df2ea339-5016-4c59-a5c6-b78f28a9026a"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "What safety training courses are required to take BCM shifts?",
+    "answer": "Level 1-3 at Bldg. 55 and Level 4A",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "a6539c85-9170-48d8-990a-236ce3cf6606"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "How can shifts be booked in the OTP system for ATLAS/BCM shifts?",
+    "answer": "Log on to the OTP using your EDH user name and account, find 'Book my shifts', choose available dates, click to book shifts, and save the shift booking.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "1c581677-38a0-46b1-adec-3d6d945efa6f"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "Who is operationally responsible for the components in TAG Production and Validation?",
+    "answer": "The question of who is operationally responsible for the components in TAG Production and Validation is addressed in the document.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "c32cea8a-1f31-4c3f-ae57-f53100329653"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "How does one ensure consistency with analysis when defining object selection criteria for tags?",
+    "answer": "The document discusses how to ensure consistency with analysis when defining object selection criteria for tags, specifically in terms of applying the same selection as done on tags to electrons on AOD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "5de6b122-f1ac-4312-a454-697359f1f72c"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "What is the main purpose of AthenaMP?",
+    "answer": "The main purpose of AthenaMP is to allow running more simultaneous event processors on a given production node to increase event throughput by sharing memory among sub-processes.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "c856664c-e566-4327-a219-c74e77429c36"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "How does the Shared Event Queue strategy work in AthenaMP?",
+    "answer": "In the Shared Event Queue strategy, all worker processes have access to a queue filled with event numbers, and they pull event numbers out on a first-come, first-served basis to achieve load balancing.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "3b75fac1-91ef-4452-a40d-61318afd1a6f"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "Where can one find the code for producing ntuples from BPHY8 DxAODs?",
+    "answer": "The code for producing ntuples from BPHY8 DxAODs can be found in the BsmumuNtupleMaker directory, which is part of the Git project at https://gitlab.cern.ch/atlas-physics/beauty/rare/bmumu-run2/AnalysisCode",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "7c2d79af-1e3e-4eec-8fbb-350c8a1d41c1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "What files are needed for pileup reweighting and where can they be found?",
+    "answer": "PRW files and Lumi files are needed for pileup reweighting. PRW files can be downloaded from the grid and placed in the right place in EOS, while Lumi files are picked up from the calibration area in CVMFS.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "c482c938-aa49-4431-ba36-0737b8c6abf9"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "c003b78a-a751-46dd-b602-f7efaff36491"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "f37d234e-828d-4f81-ad5b-6c2388ff1597"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "d377f955-7943-47bf-9cda-6bb5252775a9"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "0aedf4ab-9799-4519-837b-2d71270e5e67"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "What safety training courses are required to take BCM shifts?",
+    "answer": "Level 1-3 at Bldg. 55 and Level 4A",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "d73c387b-d332-4e39-b026-2bcd5e099081"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "How can shifts be booked in the OTP system for ATLAS/BCM shifts?",
+    "answer": "Log on to the OTP using your EDH user name and account, find 'Book my shifts', choose available dates, click to book shifts, and save the shift booking.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "5a408614-f544-4e29-be20-b7eae471efbd"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "Who is operationally responsible for the components in TAG Production and Validation?",
+    "answer": "The question of who is operationally responsible for the components in TAG Production and Validation is addressed in the document.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "85426224-eb32-4884-9ac5-ba74e9dc26a2"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "How does one ensure consistency with analysis when defining object selection criteria for tags?",
+    "answer": "The document discusses how to ensure consistency with analysis when defining object selection criteria for tags, specifically in terms of applying the same selection as done on tags to electrons on AOD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "1fc0a415-97bd-491f-8733-9e158ee26d79"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "What is the main purpose of AthenaMP?",
+    "answer": "The main purpose of AthenaMP is to allow running more simultaneous event processors on a given production node to increase event throughput by sharing memory among sub-processes.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "73368c37-3caa-44e3-9471-4f09b417a881"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "How does the Shared Event Queue strategy work in AthenaMP?",
+    "answer": "In the Shared Event Queue strategy, all worker processes have access to a queue filled with event numbers, and they pull event numbers out on a first-come, first-served basis to achieve load balancing.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "8c1f78b7-8528-4ba1-bfdf-42b45aabb5e2"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "Where can one find the code for producing ntuples from BPHY8 DxAODs?",
+    "answer": "The code for producing ntuples from BPHY8 DxAODs can be found in the BsmumuNtupleMaker directory, which is part of the Git project at https://gitlab.cern.ch/atlas-physics/beauty/rare/bmumu-run2/AnalysisCode",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "42e1771a-492e-42f1-99a6-2bc412169889"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "What files are needed for pileup reweighting and where can they be found?",
+    "answer": "PRW files and Lumi files are needed for pileup reweighting. PRW files can be downloaded from the grid and placed in the right place in EOS, while Lumi files are picked up from the calibration area in CVMFS.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "39cae27d-e142-461d-adc2-5fda3e8eefcc"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "Who is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group?",
+    "answer": "Kate Shaw is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "f8f00929-f03b-468d-b29c-da172cdffe42"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "What is the expected timeline for the release of the new Open Data using PhysLite?",
+    "answer": "The release of the new Open Data using PhysLite is expected to be by the end of 2023.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "ca6d2ada-3918-4cf3-89cd-79f0f0a27114"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "What should be checked first if 48V, LV, HV are in UNPLUGGED states?",
+    "answer": "First check that 48V service is on (on the pit). Otherwise, it may be related to board failures. Consult with the Japan people.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "bdd96e3e-0ecf-4e39-b750-9306afcb683b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "How should the BranchController 48V, LV, HV with SYNC FAILURE errors be fixed?",
+    "answer": "First, try Recover which is the softer solution, then if it doesn't help, try a Hardware Reset. If these don't work, attempt a reset via the (Muon) CAEN Reset Net for the affected branch controller, and as a last resort, consider a CAEN mainframe power cycle after discussion with the Japanese.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "ff3fa611-168b-4937-ac94-c69eeab4d2e2"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "0056cc86-66eb-4994-a419-be1ff3e288f4"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "7cb9aa35-d4eb-42b2-8a51-abde07002f1a"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "f9b072cf-c672-4de0-9acd-ea629618ceb5"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "dc791136-edba-490d-8584-8f222006f433"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "What safety training courses are required to take BCM shifts?",
+    "answer": "Level 1-3 at Bldg. 55 and Level 4A",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "754a9518-964f-4f5a-8c25-915f28f6ab62"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "How can shifts be booked in the OTP system for ATLAS/BCM shifts?",
+    "answer": "Log on to the OTP using your EDH user name and account, find 'Book my shifts', choose available dates, click to book shifts, and save the shift booking.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "0b1ff3dc-c699-4e4b-8352-c0d79a3b3183"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "Who is operationally responsible for the components in TAG Production and Validation?",
+    "answer": "The question of who is operationally responsible for the components in TAG Production and Validation is addressed in the document.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "fa27d56c-cfb1-4939-83eb-47d9985499a1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "How does one ensure consistency with analysis when defining object selection criteria for tags?",
+    "answer": "The document discusses how to ensure consistency with analysis when defining object selection criteria for tags, specifically in terms of applying the same selection as done on tags to electrons on AOD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "4197d253-de43-4276-b9d7-f071f21b333a"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "What is the main purpose of AthenaMP?",
+    "answer": "The main purpose of AthenaMP is to allow running more simultaneous event processors on a given production node to increase event throughput by sharing memory among sub-processes.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "71c9fe29-3ecf-4242-9d79-4afc749d50bc"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "How does the Shared Event Queue strategy work in AthenaMP?",
+    "answer": "In the Shared Event Queue strategy, all worker processes have access to a queue filled with event numbers, and they pull event numbers out on a first-come, first-served basis to achieve load balancing.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "5f4dea4a-7202-49f2-ba4c-7cf69072fa9e"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "Where can one find the code for producing ntuples from BPHY8 DxAODs?",
+    "answer": "The code for producing ntuples from BPHY8 DxAODs can be found in the BsmumuNtupleMaker directory, which is part of the Git project at https://gitlab.cern.ch/atlas-physics/beauty/rare/bmumu-run2/AnalysisCode",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "3102210f-d2af-4251-b012-e696668d139e"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "What files are needed for pileup reweighting and where can they be found?",
+    "answer": "PRW files and Lumi files are needed for pileup reweighting. PRW files can be downloaded from the grid and placed in the right place in EOS, while Lumi files are picked up from the calibration area in CVMFS.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "b9000437-64e4-4e54-880f-5b973c79389b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "Who is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group?",
+    "answer": "Kate Shaw is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "8c192164-b009-4f78-8586-2a5f6694233a"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "What is the expected timeline for the release of the new Open Data using PhysLite?",
+    "answer": "The release of the new Open Data using PhysLite is expected to be by the end of 2023.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "56ef28a1-e4c6-4b1c-95bd-e6db51ea6636"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "What should be checked first if 48V, LV, HV are in UNPLUGGED states?",
+    "answer": "First check that 48V service is on (on the pit). Otherwise, it may be related to board failures. Consult with the Japan people.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "4dcf56d6-cfa8-453b-bfbb-d3a3f858f503"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "How should the BranchController 48V, LV, HV with SYNC FAILURE errors be fixed?",
+    "answer": "First, try Recover which is the softer solution, then if it doesn't help, try a Hardware Reset. If these don't work, attempt a reset via the (Muon) CAEN Reset Net for the affected branch controller, and as a last resort, consider a CAEN mainframe power cycle after discussion with the Japanese.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "113922ef-bb85-4414-9097-c911237b4ec1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "06887b60-4c2f-4204-90cb-9534927ca77c"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "9725cd43-3592-49fc-bd36-cdbecdd29fb6"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "c00f5a09-950f-4bc5-8255-ca7dda987550"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "c426f290-754c-4cc0-aab9-74b5d4a91556"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "What safety training courses are required to take BCM shifts?",
+    "answer": "Level 1-3 at Bldg. 55 and Level 4A",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "acb5bd99-74d5-4424-aec2-afc916c993b7"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "How can shifts be booked in the OTP system for ATLAS/BCM shifts?",
+    "answer": "Log on to the OTP using your EDH user name and account, find 'Book my shifts', choose available dates, click to book shifts, and save the shift booking.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "dd3f82c0-b12e-438f-8a0b-700bc4ba14da"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "Who is operationally responsible for the components in TAG Production and Validation?",
+    "answer": "The question of who is operationally responsible for the components in TAG Production and Validation is addressed in the document.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "79ad95cc-a109-4c4f-bc7d-10c261f9b8e7"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "How does one ensure consistency with analysis when defining object selection criteria for tags?",
+    "answer": "The document discusses how to ensure consistency with analysis when defining object selection criteria for tags, specifically in terms of applying the same selection as done on tags to electrons on AOD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "60c5c060-bf82-4985-b5a0-5eeb37568bf1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "What is the main purpose of AthenaMP?",
+    "answer": "The main purpose of AthenaMP is to allow running more simultaneous event processors on a given production node to increase event throughput by sharing memory among sub-processes.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "93981b47-44d6-44ae-ab2f-e266f18e62e8"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "How does the Shared Event Queue strategy work in AthenaMP?",
+    "answer": "In the Shared Event Queue strategy, all worker processes have access to a queue filled with event numbers, and they pull event numbers out on a first-come, first-served basis to achieve load balancing.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "2e682811-b014-427e-bbd6-54d211ff9c56"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "Where can one find the code for producing ntuples from BPHY8 DxAODs?",
+    "answer": "The code for producing ntuples from BPHY8 DxAODs can be found in the BsmumuNtupleMaker directory, which is part of the Git project at https://gitlab.cern.ch/atlas-physics/beauty/rare/bmumu-run2/AnalysisCode",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "02c87531-e541-4246-a80b-14941caaed90"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "What files are needed for pileup reweighting and where can they be found?",
+    "answer": "PRW files and Lumi files are needed for pileup reweighting. PRW files can be downloaded from the grid and placed in the right place in EOS, while Lumi files are picked up from the calibration area in CVMFS.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "764f88b9-bb5a-4544-93d8-e9fa6091fe88"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "Who is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group?",
+    "answer": "Kate Shaw is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "8c056a49-3d84-4f87-9e92-0893f80ff88a"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "What is the expected timeline for the release of the new Open Data using PhysLite?",
+    "answer": "The release of the new Open Data using PhysLite is expected to be by the end of 2023.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "6df93a53-7285-4af1-8984-8e62ef167932"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "What should be checked first if 48V, LV, HV are in UNPLUGGED states?",
+    "answer": "First check that 48V service is on (on the pit). Otherwise, it may be related to board failures. Consult with the Japan people.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "7ba2b1fe-5fb9-4766-b6e8-7904440b6698"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "How should the BranchController 48V, LV, HV with SYNC FAILURE errors be fixed?",
+    "answer": "First, try Recover which is the softer solution, then if it doesn't help, try a Hardware Reset. If these don't work, attempt a reset via the (Muon) CAEN Reset Net for the affected branch controller, and as a last resort, consider a CAEN mainframe power cycle after discussion with the Japanese.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "3982b97a-83f9-4059-9522-3907a0d0b311"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlCoolConsole.txt",
+    "question": "What is AtlCoolConsole and how does it provide access to a COOL database?",
+    "answer": "AtlCoolConsole is an extension to the python interpreter that offers a 'console-like' access to a COOL database, allowing browsing using unix file-system like commands and some updates such as tag manipulations and deleting folders.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:56.338613",
+    "id": "6c69bf76-d7c8-4191-b8f1-bfda6f20dbd3"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlCoolConsole.txt",
+    "question": "How can you connect AtlCoolConsole to a database and what message do you receive upon successful connection?",
+    "answer": "To connect AtlCoolConsole to a database, you can use the command 'AtlCoolConsole.py <connection>' where <connection> is a COOL connection string. Upon successful connection, you will receive the message 'Welcome to AtlCoolConsole'.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:56.338613",
+    "id": "43bb1c38-041d-4987-a024-cc69a5f65fb9"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasRelease1110.txt",
+    "question": "What is the purpose of the page on AtlasRelease1110?",
+    "answer": "The page is a brief description of known problems with the release 11.1.0 and recipes to bypass them.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:59.217644",
+    "id": "e52cd5aa-073f-4b6e-b670-80414061db2e"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasRelease1110.txt",
+    "question": "What action needs to be taken to address the problem with muon reco as mentioned in the document?",
+    "answer": "One needs to switch off muon reco in their myTopOptions.py by setting DetFlags.Muon_setOff().",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:59.217644",
+    "id": "5b95fe15-6352-4867-99a9-64877fefc3bc"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "9fab9f8d-55d9-4e0e-b8a0-54e8a5088d7e"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "92ec2595-ef37-4d0e-8a51-0add43bdbff7"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "fa45b507-5131-4bd2-b94d-950ac9a4558b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "f20bed8b-8302-40ae-9fc3-bc8f5de2d086"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "What safety training courses are required to take BCM shifts?",
+    "answer": "Level 1-3 at Bldg. 55 and Level 4A",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "afc90ff6-0777-412a-919d-0bee409029cf"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "How can shifts be booked in the OTP system for ATLAS/BCM shifts?",
+    "answer": "Log on to the OTP using your EDH user name and account, find 'Book my shifts', choose available dates, click to book shifts, and save the shift booking.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "59f75654-fadb-48c1-8b20-8a0464c80999"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "Who is operationally responsible for the components in TAG Production and Validation?",
+    "answer": "The question of who is operationally responsible for the components in TAG Production and Validation is addressed in the document.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "6a669719-9ba6-4d84-bc96-dea650cf6043"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "How does one ensure consistency with analysis when defining object selection criteria for tags?",
+    "answer": "The document discusses how to ensure consistency with analysis when defining object selection criteria for tags, specifically in terms of applying the same selection as done on tags to electrons on AOD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "117a1d4c-7510-4168-a1fb-3791d53c65a6"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "What is the main purpose of AthenaMP?",
+    "answer": "The main purpose of AthenaMP is to allow running more simultaneous event processors on a given production node to increase event throughput by sharing memory among sub-processes.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "a4dcd161-1c97-43bf-bfae-b6eb0b39e772"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "How does the Shared Event Queue strategy work in AthenaMP?",
+    "answer": "In the Shared Event Queue strategy, all worker processes have access to a queue filled with event numbers, and they pull event numbers out on a first-come, first-served basis to achieve load balancing.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "79860114-f062-4a95-83ee-7668286de950"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "Where can one find the code for producing ntuples from BPHY8 DxAODs?",
+    "answer": "The code for producing ntuples from BPHY8 DxAODs can be found in the BsmumuNtupleMaker directory, which is part of the Git project at https://gitlab.cern.ch/atlas-physics/beauty/rare/bmumu-run2/AnalysisCode",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "0a3e1a31-8d84-4eac-8c2c-1eb9a6a78802"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "What files are needed for pileup reweighting and where can they be found?",
+    "answer": "PRW files and Lumi files are needed for pileup reweighting. PRW files can be downloaded from the grid and placed in the right place in EOS, while Lumi files are picked up from the calibration area in CVMFS.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "17ed3aa0-7957-4228-b51f-ea0dff313590"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "Who is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group?",
+    "answer": "Kate Shaw is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "b2951aa9-f98a-404b-9aab-66ac4ad0b194"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "What is the expected timeline for the release of the new Open Data using PhysLite?",
+    "answer": "The release of the new Open Data using PhysLite is expected to be by the end of 2023.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "2803c234-db47-467e-b4a9-a991760a8076"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "What should be checked first if 48V, LV, HV are in UNPLUGGED states?",
+    "answer": "First check that 48V service is on (on the pit). Otherwise, it may be related to board failures. Consult with the Japan people.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "5d8b097f-f841-434c-a8c0-ac5629d565a9"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "How should the BranchController 48V, LV, HV with SYNC FAILURE errors be fixed?",
+    "answer": "First, try Recover which is the softer solution, then if it doesn't help, try a Hardware Reset. If these don't work, attempt a reset via the (Muon) CAEN Reset Net for the affected branch controller, and as a last resort, consider a CAEN mainframe power cycle after discussion with the Japanese.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "d740268b-d674-44eb-ae9e-deef52ccfded"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlCoolConsole.txt",
+    "question": "What is AtlCoolConsole and how does it provide access to a COOL database?",
+    "answer": "AtlCoolConsole is an extension to the python interpreter that offers a 'console-like' access to a COOL database, allowing browsing using unix file-system like commands and some updates such as tag manipulations and deleting folders.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:56.338613",
+    "id": "6f6dc356-6d43-490d-9084-d4f1a91fe11a"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlCoolConsole.txt",
+    "question": "How can you connect AtlCoolConsole to a database and what message do you receive upon successful connection?",
+    "answer": "To connect AtlCoolConsole to a database, you can use the command 'AtlCoolConsole.py <connection>' where <connection> is a COOL connection string. Upon successful connection, you will receive the message 'Welcome to AtlCoolConsole'.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:56.338613",
+    "id": "1ac8191a-ed30-4a68-a4a0-077349449435"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasRelease1110.txt",
+    "question": "What is the purpose of the page on AtlasRelease1110?",
+    "answer": "The page is a brief description of known problems with the release 11.1.0 and recipes to bypass them.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:59.217644",
+    "id": "ff612a8b-dc94-4af6-9d30-f0814de7b76e"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasRelease1110.txt",
+    "question": "What action needs to be taken to address the problem with muon reco as mentioned in the document?",
+    "answer": "One needs to switch off muon reco in their myTopOptions.py by setting DetFlags.Muon_setOff().",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:59.217644",
+    "id": "571103f3-68a9-4267-886b-cc6f8a9f1f63"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDcsItkPixelMops.txt",
+    "question": "What is the purpose of the MOPS (Monitoring Of the Pixel System) ASIC?",
+    "answer": "The purpose of the MOPS ASIC is to monitor voltages and temperatures of detector modules belonging to one SP chain, with a maximum of 32 ADC channels available.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:04.542508",
+    "id": "4382908e-2ccb-4324-b6ed-322e11a990fc"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDcsItkPixelMops.txt",
+    "question": "How can users communicate with the DCS ASIC for testing purposes using the CANMOPS system?",
+    "answer": "Users can communicate with the DCS ASIC using the CANMOPS Python package, which communicates with a CAN interface and talks CANopen with connected DCS Controllers.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:04.542508",
+    "id": "794515af-3a7d-4af4-a727-c17472b0705b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CSCDataQuality.txt",
+    "question": "What is one of the quantities that should be monitored for CSC data quality?",
+    "answer": "Efficiency of the 4 layers of each chamber can be estimated after tracks have been found.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:06.630728",
+    "id": "5f664725-8cd1-48e4-90aa-3cdd3ae866ec"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CSCDataQuality.txt",
+    "question": "How is the loss of lock information handled by the ROD?",
+    "answer": "The ROD will automatically send fill frames until lock has been re-established. The number of losses per time interval and the duration of the loss are recorded in the ROD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:06.630728",
+    "id": "7cf983b7-1943-4f2e-8141-9b39e5cb0e61"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTDAQShifterToolsUserDocumentation.txt",
+    "question": "What are some of the functionalities provided by AtlasTDAQFarmTools?",
+    "answer": "Functionalities provided by AtlasTDAQFarmTools include tfarmcheck, tfarmprocess, tfarmcleanfiles, tfarmcleanprocess, tfarmgetlogs, and tfarmtop.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:11.505455",
+    "id": "aae3ee08-6a73-4c1e-8851-0777583a2fef"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTDAQShifterToolsUserDocumentation.txt",
+    "question": "How should users report bugs related to AtlasTDAQFarmTools?",
+    "answer": "Users should report bugs related to AtlasTDAQFarmTools to Hegoi.Garitaonandia@cern.ch.",
+    "type": "contextual",
+    "created_at": "2024-11-17T15:04:11.505455",
+    "id": "065de8c9-4503-406c-b405-deff0027e5e7"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "3472cc8c-7ac3-4751-9d4f-4db26e27d08d"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "21b7ba34-ee24-4433-90cb-62ffb0f26a83"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "3a5b0391-4a2f-474e-a8e4-8eec2730bedb"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "84e7f7ea-c48b-4671-970e-5128d6c3354b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "What safety training courses are required to take BCM shifts?",
+    "answer": "Level 1-3 at Bldg. 55 and Level 4A",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "4d024eed-a2de-421e-89e2-440443738626"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "How can shifts be booked in the OTP system for ATLAS/BCM shifts?",
+    "answer": "Log on to the OTP using your EDH user name and account, find 'Book my shifts', choose available dates, click to book shifts, and save the shift booking.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "5daa352a-4e1d-45cc-99af-ed3aa9f2108a"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "Who is operationally responsible for the components in TAG Production and Validation?",
+    "answer": "The question of who is operationally responsible for the components in TAG Production and Validation is addressed in the document.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "ec1b2d75-1110-49dd-929e-53dd14e50579"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "How does one ensure consistency with analysis when defining object selection criteria for tags?",
+    "answer": "The document discusses how to ensure consistency with analysis when defining object selection criteria for tags, specifically in terms of applying the same selection as done on tags to electrons on AOD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "06275885-5354-4e10-9ce5-85ed3cb7f4d1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "What is the main purpose of AthenaMP?",
+    "answer": "The main purpose of AthenaMP is to allow running more simultaneous event processors on a given production node to increase event throughput by sharing memory among sub-processes.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "be1070ac-5333-4f47-a949-b8fbead90a8b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "How does the Shared Event Queue strategy work in AthenaMP?",
+    "answer": "In the Shared Event Queue strategy, all worker processes have access to a queue filled with event numbers, and they pull event numbers out on a first-come, first-served basis to achieve load balancing.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "240eff95-9fb9-46d2-b322-38f78b1ac746"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "Where can one find the code for producing ntuples from BPHY8 DxAODs?",
+    "answer": "The code for producing ntuples from BPHY8 DxAODs can be found in the BsmumuNtupleMaker directory, which is part of the Git project at https://gitlab.cern.ch/atlas-physics/beauty/rare/bmumu-run2/AnalysisCode",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "fffe8881-9b8a-4d60-ad13-624c6bc8936f"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "What files are needed for pileup reweighting and where can they be found?",
+    "answer": "PRW files and Lumi files are needed for pileup reweighting. PRW files can be downloaded from the grid and placed in the right place in EOS, while Lumi files are picked up from the calibration area in CVMFS.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "c96e081e-0254-480a-9856-55eb02c2fc3b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "Who is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group?",
+    "answer": "Kate Shaw is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "fd2afe34-c7be-4e10-8fd5-acfcc046f4d4"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "What is the expected timeline for the release of the new Open Data using PhysLite?",
+    "answer": "The release of the new Open Data using PhysLite is expected to be by the end of 2023.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "e9b61ac0-bc77-48f0-a574-54315b7842ab"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "What should be checked first if 48V, LV, HV are in UNPLUGGED states?",
+    "answer": "First check that 48V service is on (on the pit). Otherwise, it may be related to board failures. Consult with the Japan people.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "458cab0c-78c3-44f7-a9d2-aa2243fb11ef"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "How should the BranchController 48V, LV, HV with SYNC FAILURE errors be fixed?",
+    "answer": "First, try Recover which is the softer solution, then if it doesn't help, try a Hardware Reset. If these don't work, attempt a reset via the (Muon) CAEN Reset Net for the affected branch controller, and as a last resort, consider a CAEN mainframe power cycle after discussion with the Japanese.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "7e0ba25a-f364-4cec-9331-4448966ac313"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlCoolConsole.txt",
+    "question": "What is AtlCoolConsole and how does it provide access to a COOL database?",
+    "answer": "AtlCoolConsole is an extension to the python interpreter that offers a 'console-like' access to a COOL database, allowing browsing using unix file-system like commands and some updates such as tag manipulations and deleting folders.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:56.338613",
+    "id": "68e5a14b-c666-44f9-8046-c003978b56bd"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlCoolConsole.txt",
+    "question": "How can you connect AtlCoolConsole to a database and what message do you receive upon successful connection?",
+    "answer": "To connect AtlCoolConsole to a database, you can use the command 'AtlCoolConsole.py <connection>' where <connection> is a COOL connection string. Upon successful connection, you will receive the message 'Welcome to AtlCoolConsole'.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:56.338613",
+    "id": "3a8e164a-3f94-4798-960c-04234ac5603d"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasRelease1110.txt",
+    "question": "What is the purpose of the page on AtlasRelease1110?",
+    "answer": "The page is a brief description of known problems with the release 11.1.0 and recipes to bypass them.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:59.217644",
+    "id": "c0ebadf9-d403-440f-828f-be4b04cea716"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasRelease1110.txt",
+    "question": "What action needs to be taken to address the problem with muon reco as mentioned in the document?",
+    "answer": "One needs to switch off muon reco in their myTopOptions.py by setting DetFlags.Muon_setOff().",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:59.217644",
+    "id": "2c8600c9-7f59-41c2-aac6-ae1661b91f9b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDcsItkPixelMops.txt",
+    "question": "What is the purpose of the MOPS (Monitoring Of the Pixel System) ASIC?",
+    "answer": "The purpose of the MOPS ASIC is to monitor voltages and temperatures of detector modules belonging to one SP chain, with a maximum of 32 ADC channels available.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:04.542508",
+    "id": "cd1e023e-0ba9-4b2b-8a9e-27c74a4ee34a"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDcsItkPixelMops.txt",
+    "question": "How can users communicate with the DCS ASIC for testing purposes using the CANMOPS system?",
+    "answer": "Users can communicate with the DCS ASIC using the CANMOPS Python package, which communicates with a CAN interface and talks CANopen with connected DCS Controllers.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:04.542508",
+    "id": "cee3ef9b-cf24-4fb3-9969-b1844b9b1667"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CSCDataQuality.txt",
+    "question": "What is one of the quantities that should be monitored for CSC data quality?",
+    "answer": "Efficiency of the 4 layers of each chamber can be estimated after tracks have been found.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:06.630728",
+    "id": "5061c500-354b-4f57-aeb6-d876bc4a59c9"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CSCDataQuality.txt",
+    "question": "How is the loss of lock information handled by the ROD?",
+    "answer": "The ROD will automatically send fill frames until lock has been re-established. The number of losses per time interval and the duration of the loss are recorded in the ROD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:06.630728",
+    "id": "39ebb86e-91af-412b-b2d8-30c1f8fa2097"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTDAQShifterToolsUserDocumentation.txt",
+    "question": "What are some of the functionalities provided by AtlasTDAQFarmTools?",
+    "answer": "Functionalities provided by AtlasTDAQFarmTools include tfarmcheck, tfarmprocess, tfarmcleanfiles, tfarmcleanprocess, tfarmgetlogs, and tfarmtop.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:11.505455",
+    "id": "2dd88b94-deb4-467d-b517-7e2e1ed054da"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTDAQShifterToolsUserDocumentation.txt",
+    "question": "How should users report bugs related to AtlasTDAQFarmTools?",
+    "answer": "Users should report bugs related to AtlasTDAQFarmTools to Hegoi.Garitaonandia@cern.ch.",
+    "type": "contextual",
+    "created_at": "2024-11-17T15:04:11.505455",
+    "id": "9a10a724-0b75-4b78-a832-a93fade8cdfd"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BaslinecutsforWW.txt",
+    "question": "What are the main headers included in the document BaslinecutsforWW?",
+    "answer": "The main headers included in the document BaslinecutsforWW are GRL (Use the GRLs from W/Z Signature Group), WW->lnulnu, and Cutflow yields for reference.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:13.653469",
+    "id": "0751711d-95a9-4c52-ad06-a4ab70dad4f1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BaslinecutsforWW.txt",
+    "question": "How can you calculate the impact parameter significance with respect to the Primary Vertex for electrons in the document?",
+    "answer": "The impact parameter significance with respect to the Primary Vertex for electrons can be calculated using the formula el_trackd0pv/el_tracksigd0pv, and it should be less than 10.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:13.653469",
+    "id": "1d1746b9-cf5b-480c-8c47-f2740867f604"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AbcnNiDaq.txt",
+    "question": "What is the purpose of the National Instruments (NI) DAQ system for the ABCN ASIC?",
+    "answer": "The purpose of the NI DAQ system is to test the ABCN chip using the NI 656x card and the NI 6509 card.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:17.665644",
+    "id": "4e5825c9-c5a1-488c-b886-f4417fa5c0cc"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AbcnNiDaq.txt",
+    "question": "How can the clock source for the Sample Clock be programmed in the NI-656x card?",
+    "answer": "The Sample Clock in the NI-656x card can be programmed to come from either the On-Board clock source signal or an external frequency generator using the NI-HSDIO library.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:17.665644",
+    "id": "9af90c88-affa-4aa7-9bb7-d797c6ff4fc4"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ActionItems.txt",
+    "question": "What is the purpose of setting release 15.0.2 to approval mode for top package managers and project coordinators?",
+    "answer": "Setting release 15.0.2 to approval mode will help include changes to non-EDM packages in a production release.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:19.623164",
+    "id": "dbbdf7e5-87db-47ae-9ade-dc842e28f625"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ActionItems.txt",
+    "question": "How are partons matched to a reco jet in the context of Truth/Reco Matching Tools?",
+    "answer": "A tool is produced that matches partons to a reco jet by following the model in JetSimTools/JetTruthParticleSelectorTool.h.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:19.623164",
+    "id": "8bdefba7-984f-4167-9ffb-dd42b200b08b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AMIReviewMail3.txt",
+    "question": "Why is 'rome' data stored with DC2 according to the document?",
+    "answer": "'rome' data is stored with DC2 because the datasets with 'rome' in the name started appearing in the prodDB and the only way to populate AMI with anything in DC2 was by reading the prodDB.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:22.484887",
+    "id": "42b14c1b-1677-46ca-8d34-734f46d1ce73"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AMIReviewMail3.txt",
+    "question": "What feedback did Davide provide about the AMI system in the document?",
+    "answer": "Davide provided first impressions about AMI, including issues with navigation, dataset descriptions, metadata fields, and task definitions, highlighting areas for improvement.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:22.484887",
+    "id": "9197297a-1e59-49ef-8872-41303c15589d"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaUsingDQ2.txt",
+    "question": "What is the purpose of the topic described in the document?",
+    "answer": "The page describes how to run Athena on CSC samples using DQ2.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:25.179759",
+    "id": "35fa775b-ee6a-4946-a332-12c5356ca856"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaUsingDQ2.txt",
+    "question": "How can you search for datasets using dq2_ls?",
+    "answer": "You can search for datasets by using dq2_ls which lists datasets matching a given pattern. The pattern may contain wildcards representing any strings.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:25.179759",
+    "id": "51c260ee-87ff-4bef-a61e-fade44675fcc"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BlackHatForAtlas.txt",
+    "question": "What is BlackHat Sherpa+BlackHat ntuples used for in the context of ATLAS collaborators?",
+    "answer": "BlackHat Sherpa+BlackHat ntuples have been put on the grid to allow ATLAS collaborators to use them.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:27.054212",
+    "id": "25cf9ed2-4400-4144-9ba9-d509c78b2671"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BlackHatForAtlas.txt",
+    "question": "How can one obtain a complete NLO prediction using BlackHat?",
+    "answer": "To get a complete NLO prediction, five files are needed: %_born.root (born contribution), %_real.root (real contribution), %_vsub.root (integrated subtraction), %_loop-lc.root (leading color virtual contribution), %_loop-fmlc.root (full-leading color virtual contribution).",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:27.054212",
+    "id": "36b9c695-bc5a-4803-a7c5-3fa8d0e10793"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BarrelCommissioningMonitor.txt",
+    "question": "What is the status of LBA19 in the Barrel Commissioning?",
+    "answer": "LBA19 is marked as complete with the status 'In Progress' from 2006.01.25 to 2006.02.21.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:30.700904",
+    "id": "0d51184c-5a7a-4107-ab84-291f144eaeea"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BarrelCommissioningMonitor.txt",
+    "question": "How can the information in the table be re-sorted?",
+    "answer": "By clicking on the column headers, the information in the table can be re-sorted, for example, by Sector instead of the default by Drawer.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:30.700904",
+    "id": "f75b3e1d-8b98-4161-b5cb-9d0d32f10332"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasPhysicsRun3Planning2022.txt",
+    "question": "Where can announcements of CP recommendations be found?",
+    "answer": "Announcements of CP recommendations can be found on the Physics analysis announcement egroup.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:32.415311",
+    "id": "98a775ea-e81d-4ab8-a0e2-74d257387c13"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasPhysicsRun3Planning2022.txt",
+    "question": "What is the status of the trigger recommendations summarized from the twiki page of the Trigger group?",
+    "answer": "The status of the trigger recommendations will be summarized from the twiki page of the Trigger group.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:32.415311",
+    "id": "33dc8c5f-310a-42b0-9194-ef3060ebcc33"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AlfaDataPrepRunsSeptember2016.txt",
+    "question": "What is the range of runs presented for ALFA in September 2016?",
+    "answer": "The runs presented are between 308979 and 309166.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:34.824774",
+    "id": "6bf3d47c-5a58-415c-ac24-6b2b45301df2"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AlfaDataPrepRunsSeptember2016.txt",
+    "question": "What information should be checked in each event analysis with ALFA detector?",
+    "answer": "In each event analysis, the status of the ALFA detector should be checked.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:34.824774",
+    "id": "79ab7f36-ced2-4074-af84-8e5f935d9424"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ATLAS25-Book.txt",
+    "question": "What is the purpose of the book being written by the ATLAS Collaboration?",
+    "answer": "The book is being written to celebrate the 25 years of the ATLAS Collaboration, covering all aspects of the ATLAS detector and collaboration from its inception to recent upgrades and accomplishments.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:37.771645",
+    "id": "91edb845-fca2-474d-bfa5-c8f6a3efb181"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ATLAS25-Book.txt",
+    "question": "Who are some of the authors contributing to the section on the discovery of the Higgs Boson in the book?",
+    "answer": "The section on the discovery of the Higgs Boson is authored by Kerstin Tackmann, Marumi Kado, and Fabio Cerutti.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:37.771645",
+    "id": "a5767905-d5b9-48f7-8cb3-6094869c0d2f"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmTrigger.txt",
+    "question": "What is the purpose of the Beam Conditions Monitor (BCM) as mentioned in the document?",
+    "answer": "The BCM is used as an input to the Level 1 trigger system as part of the minimum bias trigger slice, providing high sensitivity and sub-bunch-crossing timing capabilities.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:39.526506",
+    "id": "16ab26cd-0f14-4f8a-8701-72386cd648cd"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmTrigger.txt",
+    "question": "How are the BCM trigger bits calculated according to the document?",
+    "answer": "The trigger bits are calculated onboard the BCM FPGAs, and the relevant VHDL module for the calculation can be found in the document.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:39.526506",
+    "id": "24fa4d81-b7c0-4fe1-a6b0-820045205d8c"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "What is the purpose of the project created to help analyzers get started in R21?",
+    "answer": "The project was created to help analyzers get started in R21 by using Git and CMake together to get the most out of the R21 software.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:27.951653",
+    "id": "0b1b026c-78dc-4ae4-9776-c626bd629f2f"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisTopR21Tutorial.txt",
+    "question": "How can Git and CMake be used together in the context of the AnalysisTopR21Tutorial project?",
+    "answer": "Through Git, analyzers can link to Athena packages, up/downgrade their commit versions with respect to a project being built against (AnalysisTop). This allows for managing package versions effectively in the project.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:27.952653",
+    "id": "3cef3fe1-a6c2-4e1d-92d0-877c93d95a23"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What are some of the top level geometry tags listed in the DB Release 9.1.1/9.1.2/9.1.3/9.2.1?",
+    "answer": "Some of the top level geometry tags include ATLAS-CSC-00-00-00, ATLAS-CSC-00-01-00, ATLAS-CSC-01-00-00, ATLAS-CSC-02-00-00, and ATLAS-CSC-03-00-00.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "3bcedf4c-358f-43f0-a686-941c8829bff1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDBRelease911TopTags.txt",
+    "question": "What is the purpose of the ATLAS-GEO-07-00-00 tag?",
+    "answer": "The ATLAS-GEO-07-00-00 tag includes updates in BCM, BLM, and TAS, extra materials in the crack region, updates in pixel barrel materials, and muon layout R.02.03.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:30.685877",
+    "id": "2ef73c97-62fa-4dea-893b-d8051d305929"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "What safety training courses are required to take BCM shifts?",
+    "answer": "Level 1-3 at Bldg. 55 and Level 4A",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "64b678b3-b2c1-438d-8e40-42388757b007"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmShiftPage.txt",
+    "question": "How can shifts be booked in the OTP system for ATLAS/BCM shifts?",
+    "answer": "Log on to the OTP using your EDH user name and account, find 'Book my shifts', choose available dates, click to book shifts, and save the shift booking.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:35.458712",
+    "id": "022d9387-e7c0-4f4e-bc86-e360ada36b79"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "Who is operationally responsible for the components in TAG Production and Validation?",
+    "answer": "The question of who is operationally responsible for the components in TAG Production and Validation is addressed in the document.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "91c2fa6a-5f9b-4fbd-8d0a-adac30442219"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AnalysisModelWSStreaming.txt",
+    "question": "How does one ensure consistency with analysis when defining object selection criteria for tags?",
+    "answer": "The document discusses how to ensure consistency with analysis when defining object selection criteria for tags, specifically in terms of applying the same selection as done on tags to electrons on AOD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:39.502437",
+    "id": "60cfa49d-3fc7-46fd-a926-48c63f1b89e8"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "What is the main purpose of AthenaMP?",
+    "answer": "The main purpose of AthenaMP is to allow running more simultaneous event processors on a given production node to increase event throughput by sharing memory among sub-processes.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "fa70a045-e2e1-49c6-8621-ca7f138c3565"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaMP.txt",
+    "question": "How does the Shared Event Queue strategy work in AthenaMP?",
+    "answer": "In the Shared Event Queue strategy, all worker processes have access to a queue filled with event numbers, and they pull event numbers out on a first-come, first-served basis to achieve load balancing.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:43.312447",
+    "id": "b5f83e14-2d84-4b09-8ea3-ce6b5e0cbd0c"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "Where can one find the code for producing ntuples from BPHY8 DxAODs?",
+    "answer": "The code for producing ntuples from BPHY8 DxAODs can be found in the BsmumuNtupleMaker directory, which is part of the Git project at https://gitlab.cern.ch/atlas-physics/beauty/rare/bmumu-run2/AnalysisCode",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "8159de0b-b2fd-4d72-bad4-41ee2c6c1a47"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BPhysicsRareDecaysBsmumuNtupleMaker.txt",
+    "question": "What files are needed for pileup reweighting and where can they be found?",
+    "answer": "PRW files and Lumi files are needed for pileup reweighting. PRW files can be downloaded from the grid and placed in the right place in EOS, while Lumi files are picked up from the calibration area in CVMFS.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:46.380013",
+    "id": "c3ac5591-5388-4053-815a-72296a8fbf7f"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "Who is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group?",
+    "answer": "Kate Shaw is responsible for the Open Data & Tools Group within the ATLAS Education and Outreach group.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "9cf3e788-155d-45c9-af4c-8d0a8d3a4ad1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasOutreachOrgOpenData.txt",
+    "question": "What is the expected timeline for the release of the new Open Data using PhysLite?",
+    "answer": "The release of the new Open Data using PhysLite is expected to be by the end of 2023.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:49.149730",
+    "id": "44290b34-330e-4e8c-9fea-20e9b0dc1b06"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "What should be checked first if 48V, LV, HV are in UNPLUGGED states?",
+    "answer": "First check that 48V service is on (on the pit). Otherwise, it may be related to board failures. Consult with the Japan people.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "ad41e168-15ec-4472-bd86-8d10f08a6361"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CAENSystemRecovery.txt",
+    "question": "How should the BranchController 48V, LV, HV with SYNC FAILURE errors be fixed?",
+    "answer": "First, try Recover which is the softer solution, then if it doesn't help, try a Hardware Reset. If these don't work, attempt a reset via the (Muon) CAEN Reset Net for the affected branch controller, and as a last resort, consider a CAEN mainframe power cycle after discussion with the Japanese.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:51.402608",
+    "id": "5e8edb72-2b11-4928-bd7a-548bb8c52f59"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlCoolConsole.txt",
+    "question": "What is AtlCoolConsole and how does it provide access to a COOL database?",
+    "answer": "AtlCoolConsole is an extension to the python interpreter that offers a 'console-like' access to a COOL database, allowing browsing using unix file-system like commands and some updates such as tag manipulations and deleting folders.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:56.338613",
+    "id": "bb77c5e0-e462-4a2d-aba6-fb52f83538e8"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlCoolConsole.txt",
+    "question": "How can you connect AtlCoolConsole to a database and what message do you receive upon successful connection?",
+    "answer": "To connect AtlCoolConsole to a database, you can use the command 'AtlCoolConsole.py <connection>' where <connection> is a COOL connection string. Upon successful connection, you will receive the message 'Welcome to AtlCoolConsole'.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:56.338613",
+    "id": "4acd547d-fc46-4d46-84e0-960de8f80070"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasRelease1110.txt",
+    "question": "What is the purpose of the page on AtlasRelease1110?",
+    "answer": "The page is a brief description of known problems with the release 11.1.0 and recipes to bypass them.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:03:59.217644",
+    "id": "ad93caf7-3974-4f63-b7ad-0e3250be1a19"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasRelease1110.txt",
+    "question": "What action needs to be taken to address the problem with muon reco as mentioned in the document?",
+    "answer": "One needs to switch off muon reco in their myTopOptions.py by setting DetFlags.Muon_setOff().",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:03:59.217644",
+    "id": "e3db5e32-04ce-40d0-ab6f-0c2e37e336dc"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDcsItkPixelMops.txt",
+    "question": "What is the purpose of the MOPS (Monitoring Of the Pixel System) ASIC?",
+    "answer": "The purpose of the MOPS ASIC is to monitor voltages and temperatures of detector modules belonging to one SP chain, with a maximum of 32 ADC channels available.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:04.542508",
+    "id": "a2bb55de-cbdd-4745-9b77-2ecf82bb7cec"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasDcsItkPixelMops.txt",
+    "question": "How can users communicate with the DCS ASIC for testing purposes using the CANMOPS system?",
+    "answer": "Users can communicate with the DCS ASIC using the CANMOPS Python package, which communicates with a CAN interface and talks CANopen with connected DCS Controllers.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:04.542508",
+    "id": "7c420c5e-33f1-4143-9f52-0344722fc5d0"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CSCDataQuality.txt",
+    "question": "What is one of the quantities that should be monitored for CSC data quality?",
+    "answer": "Efficiency of the 4 layers of each chamber can be estimated after tracks have been found.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:06.630728",
+    "id": "f38f09a6-ba29-43f7-b46f-61078a67b7be"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CSCDataQuality.txt",
+    "question": "How is the loss of lock information handled by the ROD?",
+    "answer": "The ROD will automatically send fill frames until lock has been re-established. The number of losses per time interval and the duration of the loss are recorded in the ROD.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:06.630728",
+    "id": "1f23cd97-3369-408d-81d3-012577bf6662"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTDAQShifterToolsUserDocumentation.txt",
+    "question": "What are some of the functionalities provided by AtlasTDAQFarmTools?",
+    "answer": "Functionalities provided by AtlasTDAQFarmTools include tfarmcheck, tfarmprocess, tfarmcleanfiles, tfarmcleanprocess, tfarmgetlogs, and tfarmtop.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:11.505455",
+    "id": "6f10e5fd-985e-4300-bfa5-c138995feb15"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTDAQShifterToolsUserDocumentation.txt",
+    "question": "How should users report bugs related to AtlasTDAQFarmTools?",
+    "answer": "Users should report bugs related to AtlasTDAQFarmTools to Hegoi.Garitaonandia@cern.ch.",
+    "type": "contextual",
+    "created_at": "2024-11-17T15:04:11.505455",
+    "id": "0e8545f7-c2e7-49ac-8b44-7e42bc53cb16"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BaslinecutsforWW.txt",
+    "question": "What are the main headers included in the document BaslinecutsforWW?",
+    "answer": "The main headers included in the document BaslinecutsforWW are GRL (Use the GRLs from W/Z Signature Group), WW->lnulnu, and Cutflow yields for reference.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:13.653469",
+    "id": "62610d82-e6ee-494d-ba0f-51cec31174b0"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BaslinecutsforWW.txt",
+    "question": "How can you calculate the impact parameter significance with respect to the Primary Vertex for electrons in the document?",
+    "answer": "The impact parameter significance with respect to the Primary Vertex for electrons can be calculated using the formula el_trackd0pv/el_tracksigd0pv, and it should be less than 10.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:13.653469",
+    "id": "0da7eecf-6aef-4291-a500-09e7a8038b82"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AbcnNiDaq.txt",
+    "question": "What is the purpose of the National Instruments (NI) DAQ system for the ABCN ASIC?",
+    "answer": "The purpose of the NI DAQ system is to test the ABCN chip using the NI 656x card and the NI 6509 card.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:17.665644",
+    "id": "dea1153c-13af-4224-ba11-27cb70e28b21"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AbcnNiDaq.txt",
+    "question": "How can the clock source for the Sample Clock be programmed in the NI-656x card?",
+    "answer": "The Sample Clock in the NI-656x card can be programmed to come from either the On-Board clock source signal or an external frequency generator using the NI-HSDIO library.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:17.665644",
+    "id": "5c8f1111-bae8-4214-949f-dc902a18c029"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ActionItems.txt",
+    "question": "What is the purpose of setting release 15.0.2 to approval mode for top package managers and project coordinators?",
+    "answer": "Setting release 15.0.2 to approval mode will help include changes to non-EDM packages in a production release.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:19.623164",
+    "id": "30b82647-7af4-4a37-b8d7-cf9de81be91c"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ActionItems.txt",
+    "question": "How are partons matched to a reco jet in the context of Truth/Reco Matching Tools?",
+    "answer": "A tool is produced that matches partons to a reco jet by following the model in JetSimTools/JetTruthParticleSelectorTool.h.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:19.623164",
+    "id": "d9f6474e-52a0-4820-9519-7b9d0e4a4e4c"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AMIReviewMail3.txt",
+    "question": "Why is 'rome' data stored with DC2 according to the document?",
+    "answer": "'rome' data is stored with DC2 because the datasets with 'rome' in the name started appearing in the prodDB and the only way to populate AMI with anything in DC2 was by reading the prodDB.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:22.484887",
+    "id": "3237ff73-226e-422b-8673-d6cb4ffa722d"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AMIReviewMail3.txt",
+    "question": "What feedback did Davide provide about the AMI system in the document?",
+    "answer": "Davide provided first impressions about AMI, including issues with navigation, dataset descriptions, metadata fields, and task definitions, highlighting areas for improvement.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:22.484887",
+    "id": "d3aa4c30-7ae9-45c6-b867-1a9b8535d646"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaUsingDQ2.txt",
+    "question": "What is the purpose of the topic described in the document?",
+    "answer": "The page describes how to run Athena on CSC samples using DQ2.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:25.179759",
+    "id": "34fb38b7-4e3b-42c6-afd3-80ca9ce78a75"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AthenaUsingDQ2.txt",
+    "question": "How can you search for datasets using dq2_ls?",
+    "answer": "You can search for datasets by using dq2_ls which lists datasets matching a given pattern. The pattern may contain wildcards representing any strings.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:25.179759",
+    "id": "596acc89-a224-42ff-a97e-bd4d66bbdd9c"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BlackHatForAtlas.txt",
+    "question": "What is BlackHat Sherpa+BlackHat ntuples used for in the context of ATLAS collaborators?",
+    "answer": "BlackHat Sherpa+BlackHat ntuples have been put on the grid to allow ATLAS collaborators to use them.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:27.054212",
+    "id": "1e17888a-6d1d-4fd5-93e6-539d34bea0db"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BlackHatForAtlas.txt",
+    "question": "How can one obtain a complete NLO prediction using BlackHat?",
+    "answer": "To get a complete NLO prediction, five files are needed: %_born.root (born contribution), %_real.root (real contribution), %_vsub.root (integrated subtraction), %_loop-lc.root (leading color virtual contribution), %_loop-fmlc.root (full-leading color virtual contribution).",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:27.054212",
+    "id": "8af4921a-e81b-4f96-b378-5d9658b92648"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BarrelCommissioningMonitor.txt",
+    "question": "What is the status of LBA19 in the Barrel Commissioning?",
+    "answer": "LBA19 is marked as complete with the status 'In Progress' from 2006.01.25 to 2006.02.21.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:30.700904",
+    "id": "f83d55fd-1d11-4917-82a9-5f2c8eb9cba0"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BarrelCommissioningMonitor.txt",
+    "question": "How can the information in the table be re-sorted?",
+    "answer": "By clicking on the column headers, the information in the table can be re-sorted, for example, by Sector instead of the default by Drawer.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:30.700904",
+    "id": "aaeab5b0-9cde-4d25-b7fd-767a8bf7516c"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasPhysicsRun3Planning2022.txt",
+    "question": "Where can announcements of CP recommendations be found?",
+    "answer": "Announcements of CP recommendations can be found on the Physics analysis announcement egroup.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:32.415311",
+    "id": "50814a71-ce6f-4a44-8fcd-974bc62d740b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasPhysicsRun3Planning2022.txt",
+    "question": "What is the status of the trigger recommendations summarized from the twiki page of the Trigger group?",
+    "answer": "The status of the trigger recommendations will be summarized from the twiki page of the Trigger group.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:32.415311",
+    "id": "c9cde0c6-84ac-4fac-9cc0-6800986aa1d8"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AlfaDataPrepRunsSeptember2016.txt",
+    "question": "What is the range of runs presented for ALFA in September 2016?",
+    "answer": "The runs presented are between 308979 and 309166.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:34.824774",
+    "id": "888fc718-760f-4b46-a711-c680b05e1219"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AlfaDataPrepRunsSeptember2016.txt",
+    "question": "What information should be checked in each event analysis with ALFA detector?",
+    "answer": "In each event analysis, the status of the ALFA detector should be checked.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:34.824774",
+    "id": "9ce8b7d4-3002-4c52-a0ce-66bea2f6016e"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ATLAS25-Book.txt",
+    "question": "What is the purpose of the book being written by the ATLAS Collaboration?",
+    "answer": "The book is being written to celebrate the 25 years of the ATLAS Collaboration, covering all aspects of the ATLAS detector and collaboration from its inception to recent upgrades and accomplishments.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:37.771645",
+    "id": "96ba9606-2c55-4682-9494-f68c20ae3428"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ATLAS25-Book.txt",
+    "question": "Who are some of the authors contributing to the section on the discovery of the Higgs Boson in the book?",
+    "answer": "The section on the discovery of the Higgs Boson is authored by Kerstin Tackmann, Marumi Kado, and Fabio Cerutti.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:37.771645",
+    "id": "1af7d30a-c656-4dc0-97d0-eb7dc48acf03"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmTrigger.txt",
+    "question": "What is the purpose of the Beam Conditions Monitor (BCM) as mentioned in the document?",
+    "answer": "The BCM is used as an input to the Level 1 trigger system as part of the minimum bias trigger slice, providing high sensitivity and sub-bunch-crossing timing capabilities.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:39.526506",
+    "id": "23e4eabe-00aa-4ef5-9009-e18435ef6c1f"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\BcmTrigger.txt",
+    "question": "How are the BCM trigger bits calculated according to the document?",
+    "answer": "The trigger bits are calculated onboard the BCM FPGAs, and the relevant VHDL module for the calculation can be found in the document.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:39.526506",
+    "id": "99c68627-661e-4b7b-9195-cfed78ae869b"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasRelease14210.txt",
+    "question": "What is the purpose of the topic described in AtlasRelease14210?",
+    "answer": "The page provides a brief description of known problems with the release 14.2.10 and recipes to bypass them.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:42.534803",
+    "id": "d856912b-081d-4a72-9ee7-e4c60f5aa545"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasRelease14210.txt",
+    "question": "How can one set up the environment to work on project build according to the document?",
+    "answer": "To set up the environment for project build, one needs to create a cmthome directory, copy the requirements file mentioned in AtlasLogin, ensure the existence of a specific directory, and apply tags while setting up the requirements file.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:42.534803",
+    "id": "c8bf5146-63a8-4da3-b902-3a16a63ef9ec"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTierZeroAFS.txt",
+    "question": "What is the AFS directory structure for AtlasTierZeroAFS?",
+    "answer": "The AFS directory structure for AtlasTierZeroAFS includes directories like archive, code, crons, dev, eosdump, log3, run, run2log, shared, software, work, and www.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:44.688092",
+    "id": "4dc8b678-59a1-4ba4-a634-79b3f8f29e7a"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTierZeroAFS.txt",
+    "question": "How much of the quota is currently being used for the 'p.atlas.pro.tzsoft.readon' volume?",
+    "answer": "The 'p.atlas.pro.tzsoft.readon' volume is currently using 94% of its quota.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:44.688092",
+    "id": "42758021-e72e-4f40-95e6-465c6a8f6737"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ATLASStatisticsFAQNew.txt",
+    "question": "What are some commonly used tools for likelihood analysis?",
+    "answer": "Commonly used tools for likelihood analysis include RooFit for building a workspace, RooStats for making statistical tests, and HistFactory for building parameterized probability density functions from histograms.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:48.065439",
+    "id": "945a9309-eebe-4d41-a747-f85895ce23ab"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ATLASStatisticsFAQNew.txt",
+    "question": "When should we not use asymptotic formulae of 'CCGV'?",
+    "answer": "Asymptotic formulae of 'CCGV' should not be used for limit setting when 0 events are observed. In such cases, the upper limit at 95% CL should not be smaller than 3 events.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:48.065439",
+    "id": "f62e2e32-2994-495d-a42e-b69a3e203889"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CaloReconstructionTools.txt",
+    "question": "What are CaloNoiseTool and CaloNoiseToolDB used for?",
+    "answer": "CaloNoiseTool and CaloNoiseToolDB are used to obtain information on expected electronic or pileup noise in any Calorimeter cell, with CaloNoiseTool recomputing expected noise based on input ingredients and assumed pileup level, mainly for Monte-Carlo, while CaloNoiseToolDB gets noise values directly from the database, intended for real data.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:51.118509",
+    "id": "49051e14-8101-46a4-8eb0-96cd7af23d68"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CaloReconstructionTools.txt",
+    "question": "How is the luminosity used for normalization in the noise tool determined in versions 17.1.X.Y and higher?",
+    "answer": "In versions 17.1.X.Y and higher, the choice of luminosity for normalization is determined by two flags: CaloNoiseFlags.FixedLuminosity() and CaloNoiseFlags.UseCaloLuminosity(), where if FixedLuminosity is greater than or equal to 0, that value is used for pileup noise normalization; otherwise, if UseCaloLuminosity is true, the lumi normalization is read from a dedicated database folder, and if false, the lumi is read from the luminosity database for offline data and pileup normalization from Beam job properties for MC.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:51.118509",
+    "id": "f6732f71-4395-4c01-9efc-73693c31d525"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTDAQLargeScaleTestsDatabases.txt",
+    "question": "What are the different types of databases mentioned in the document?",
+    "answer": "All data are made available on Oracle, MySQL, AtlasDBProxy based on MySQL, and SQLite.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:53.580064",
+    "id": "8bf2e5d5-b8d3-47e8-96eb-98a6677acad1"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTDAQLargeScaleTestsDatabases.txt",
+    "question": "Why is the MySQL server used in the AtlasTDAQLargeScaleTests?",
+    "answer": "The MySQL server is read-only and is used during the LST, but for production running, it will be replaced by SQL Relay which connects to the Oracle server.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:53.580064",
+    "id": "2f7158d4-ac49-4dfa-b555-7b124e3090fe"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CalibrationTasks.txt",
+    "question": "What are the specific questions related to the Bump Connectivity task?",
+    "answer": "AMS vs. IZM, Feasibility/duration without cooling",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:54.998336",
+    "id": "e8460fdd-eb58-4104-a5b7-a24d2a7de935"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CSCBT10RHawkingsCommentsv18.txt",
+    "question": "What was the issue with the word 'analses' in the document?",
+    "answer": "'analses' was corrected to 'analyses'.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:56.757343",
+    "id": "f29d1152-f868-4055-9db0-0196ade869fc"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\CSCBT10RHawkingsCommentsv18.txt",
+    "question": "Why was the wording in Section 3 about the need for a dedicated trigger changed?",
+    "answer": "The wording was changed to better introduce the need for a dedicated trigger to address the statistics accumulated with the standard ATLAS dijet trigger.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:56.757343",
+    "id": "b32e813f-d893-4fec-b12e-ec8dff08fdb9"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasManchester.txt",
+    "question": "What is the purpose of the Manchester ATLAS group page?",
+    "answer": "This page is used to store information relevant to the Manchester ATLAS group.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:04:58.614443",
+    "id": "8536328e-c2c6-400f-bdfb-d41b131c01fe"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasManchester.txt",
+    "question": "How can one access the ATLAS software on the linux8 cluster at Manchester?",
+    "answer": "Various ATLAS releases are installed on the linux8 cluster at Manchester. For instructions on use, one can refer to ManAthenaInstallationsSLC5 or use new CVMFS.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:04:58.614443",
+    "id": "1136d16a-f02e-4d00-8f94-0708e949da6d"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTierZeroTOM.txt",
+    "question": "What is the main difference between TOM and crontab/acrontab?",
+    "answer": "The main difference is that TOM will serialize all scheduled processes to avoid them running simultaneously.",
+    "type": "factual",
+    "created_at": "2024-11-17T15:05:01.260607",
+    "id": "6a3bf6aa-4690-467c-a6c4-7c57723a1cc8"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\AtlasTierZeroTOM.txt",
+    "question": "How does the storageinfo policy language improve readability?",
+    "answer": "The storageinfo policy language introduces a hierarchical structure, shortcuts for common re expressions, and reduces the need for using pure re expressions, making policies more readable.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:05:01.260607",
+    "id": "80519481-4c95-4694-ba0b-fa221f2a5714"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ADCShifts.txt",
+    "question": "What are the three types of computing shifts currently divided for ADC?",
+    "answer": "The three types of computing shifts are AtlasDAST shifters, ADCoS shifters, and Computing Run Coordinator (CRC).",
+    "type": "factual",
+    "created_at": "2024-11-17T15:05:05.048066",
+    "id": "6fec9353-9a97-4895-bb6a-f0f25cfa3517"
+  },
+  {
+    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ADCShifts.txt",
+    "question": "Who can you contact if you are an ATLAS member interested in ADC shifts?",
+    "answer": "An ATLAS member interested in ADC shifts can contact via the mailing list atlas-adc-shift-coordination AT cern.ch.",
+    "type": "interpretative",
+    "created_at": "2024-11-17T15:05:05.048066",
+    "id": "8e5b6499-8ede-479e-ba10-383aa4ae68e2"
+  }
+]

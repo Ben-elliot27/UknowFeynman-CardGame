@@ -6,6 +6,7 @@ from flask_socketio import SocketIO, emit, join_room, leave_room, send
 import random
 import GameLogic, Admin_Controlls
 import sys
+from questionEvalsSite import questionEvals
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
@@ -178,6 +179,11 @@ def index():
 def admin_page():
     Admin_Controlls.main(games, socketio)
     return render_template('adminPage.html')
+
+@app.route(f'/qa')
+def qa_rank_page():
+    questionEvals.main(socketio)
+    return render_template('questionEvaluator.html')
 
 @socketio.on('create_game')
 def handle_create_game(data):

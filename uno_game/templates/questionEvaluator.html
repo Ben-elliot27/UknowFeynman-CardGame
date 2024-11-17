@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Answer Ranking</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .qa-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .qa-pair {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-right: 100px;
+        }
+
+        .answer {
+            margin-bottom: 15px;
+        }
+
+        .button-group {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-thumbs-up {
+            color: #28a745;
+        }
+
+        .btn-thumbs-down {
+            color: #dc3545;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .vote-count {
+            margin-left: 5px;
+            font-size: 0.9em;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-bottom: none;
+            margin-right: 5px;
+        }
+
+        .tab.active {
+            background-color: #f5f5f5;
+            border-color: #ddd;
+            border-bottom-color: transparent;
+        }
+
+        .stats-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="qa-container">
+        <div class="tabs">
+            <div class="tab active" data-tab="main">NLP Questions</div>
+            <div class="tab" data-tab="simple">Simple Questions</div>
+        </div>
+
+        <div class="stats-container">
+            <h3>Statistics</h3>
+            <div id="statsContent"></div>
+        </div>
+
+        <div id="qaContainer">
+            <!-- QA pairs will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script>
+        const socket = io();
+        let currentTab = 'main';
+
+        // Tab switching
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                currentTab = tab.dataset.tab;
+                requestData();
+            });
+        });
+
+        function requestData() {
+            socket.emit('request_initial_data', { tab: currentTab });
+            socket.emit('request_stats', { tab: currentTab });
+        }
+
+        // Connect and request initial data
+        socket.on('connect', function() {
+            requestData();
+            console.log('Connected to server, requesting initial data');
+        });
+
+        // Handle initial data load
+        socket.on('init_qa_pairs', function(data) {
+            console.log('Received initial QA pairs:', data);
+            const container = document.getElementById('qaContainer');
+            container.innerHTML = ''; // Clear existing content
+            data.qa_pairs.forEach((qa) => {
+                container.innerHTML += createQAPairHTML(qa);
+            });
+        });
+
+        // Handle stats update
+        socket.on('stats_update', function(data) {
+            const statsContent = document.getElementById('statsContent');
+            statsContent.innerHTML = `
+                <p>Questions Approved: ${data.approved}</p>
+                <p>Questions Rejected: ${data.rejected}</p>
+                <p>Total Votes: ${data.total_votes}</p>
+            `;
+        });
+
+        // Create HTML for a QA pair
+        function createQAPairHTML(qa) {
+            return `
+                <div class="qa-pair" id="qa-${qa.id}">
+                    <div class="question">${qa.question}</div>
+                    <div class="answer">${qa.answer}</div>
+                    <div class="button-group">
+                        <button class="btn btn-thumbs-up" onclick="handleVote('${qa.id}', true)">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span class="vote-count">${qa.upvotes}</span>
+                        </button>
+                        <button class="btn btn-thumbs-down" onclick="handleVote('${qa.id}', false)">
+                            <i class="fas fa-thumbs-down"></i>
+                            <span class="vote-count">${qa.downvotes}</span>
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Handle voting
+        function handleVote(id, isUpvote) {
+            socket.emit('vote', {
+                id: id,
+                is_upvote: isUpvote,
+                tab: currentTab
+            });
+        }
+
+        // Handle vote updates
+        socket.on('vote_update', function(data) {
+            const element = document.getElementById(`qa-${data.id}`);
+            if (element) {
+                if (data.should_remove) {
+                    element.remove();
+                } else {
+                    // Update vote counts
+                    const upvoteCount = element.querySelector('.btn-thumbs-up .vote-count');
+                    const downvoteCount = element.querySelector('.btn-thumbs-down .vote-count');
+                    upvoteCount.textContent = data.upvotes;
+                    downvoteCount.textContent = data.downvotes;
+                }
+            }
+        });
+
+        // Handle connection errors
+        socket.on('connect_error', (error) => {
+            console.error('Connection error:', error);
+        });
+
+        // Handle disconnections
+        socket.on('disconnect', () => {
+            console.log('Disconnected from server');
+        });
+    </script>
+</body>
+</html>
