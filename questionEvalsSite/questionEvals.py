@@ -5,7 +5,6 @@ import uuid
 
 from flask_socketio import emit
 
-
 class QAManager:
     def __init__(self):
         script_dir = os.path.dirname(__file__)
@@ -182,22 +181,33 @@ def main(socketio):
     @socketio.on('request_initial_data')
     def handle_initial_data_request(data):
         tab = data['tab']
-        qa_pairs = qa_manager.get_qa_pairs(tab)
+        try:
+            qa_pairs = qa_manager.get_qa_pairs(tab)
+        except KeyError:
+            emit('error', {'message': 'Invalid tab specified'})
+            return
         emit('init_qa_pairs', {'qa_pairs': qa_pairs})
 
     @socketio.on('request_stats')
     def handle_stats_request(data):
         tab = data['tab']
-        stats = qa_manager.get_stats(tab)
+        try:
+            stats = qa_manager.get_stats(tab)
+        except KeyError:
+            emit('error', {'message': 'Invalid tab specified'})
+            return
         emit('stats_update', stats)
 
     @socketio.on('vote')
     def handle_vote(data):
-        result = qa_manager.handle_vote(data)
-        emit('vote_update', result, broadcast=True)
+        try:
+            result = qa_manager.handle_vote(data)
+            emit('vote_update', result, broadcast=True)
 
-        # Broadcast updated stats to all clients
-        stats = qa_manager.get_stats(data['tab'])
-        emit('stats_update', stats, broadcast=True)
+            # Broadcast updated stats to all clients
+            stats = qa_manager.get_stats(data['tab'])
+            emit('stats_update', stats, broadcast=True)
+        except Exception as e:
+            emit('error', {'message': f'Error: {e}'})
 
     return "QA Ranking System Initialized"
