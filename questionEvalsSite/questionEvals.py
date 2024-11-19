@@ -114,6 +114,7 @@ class QAManager:
         upvotes = len(votes[qa_id]['upvotes'])
         downvotes = len(votes[qa_id]['downvotes'])
         should_remove = (upvotes >= self.REQUIRED_VOTES) or (downvotes >= self.REQUIRED_VOTES)
+        self.update_stats(tab, "NA")
 
         # Handle removal if necessary
         if should_remove:
@@ -157,8 +158,10 @@ class QAManager:
         if not stats:
             stats = {'approved': 0, 'rejected': 0, 'total_votes': 0}
 
-        stats['total_votes'] += 1
-        if is_approved:
+
+        if is_approved == "NA":
+            stats['total_votes'] += 1
+        elif is_approved:
             stats['approved'] += 1
         else:
             stats['rejected'] += 1
