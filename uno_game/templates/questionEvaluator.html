@@ -90,6 +90,30 @@
             background-color: #e9ecef;
             border-radius: 8px;
         }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            gap: 10px;
+        }
+
+        .pagination button {
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .pagination button:disabled {
+            background-color: #f5f5f5;
+            cursor: not-allowed;
+        }
+
+        .pagination-info {
+            margin: 0 15px;
+        }
     </style>
 </head>
 <body>
@@ -97,6 +121,8 @@
         <div class="tabs">
             <div class="tab active" data-tab="main">NLP Questions</div>
             <div class="tab" data-tab="simple">Simple Questions</div>
+            <div class="tab" data-tab="mostViewed">Questions from Most Viewed Twikis</div>
+            <div class="tab" data-tab="atlasTalk">Real questions from Atlas Talk</div>
         </div>
 
         <div class="stats-container">
@@ -104,14 +130,22 @@
             <div id="statsContent"></div>
         </div>
 
-        <div id="qaContainer">
-            <!-- QA pairs will be dynamically inserted here -->
+        <div id="qaContainer"></div>
+
+        <div class="pagination">
+            <button id="prevPage" onclick="changePage(-1)">Previous</button>
+            <span class="pagination-info">
+                Page <span id="currentPage">1</span> of <span id="totalPages">1</span>
+            </span>
+            <button id="nextPage" onclick="changePage(1)">Next</button>
         </div>
     </div>
 
     <script>
         const socket = io();
         let currentTab = 'main';
+        let currentPage = 0;
+        let totalPages = 1;
 
         // Tab switching
         document.querySelectorAll('.tab').forEach(tab => {
@@ -119,29 +153,49 @@
                 document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
                 currentTab = tab.dataset.tab;
+                currentPage = 0; // Reset to first page when changing tabs
                 requestData();
             });
         });
 
         function requestData() {
-            socket.emit('request_initial_data', { tab: currentTab });
+            socket.emit('request_initial_data', {
+                tab: currentTab,
+                page: currentPage
+            });
             socket.emit('request_stats', { tab: currentTab });
+            updatePaginationControls();
+        }
+
+        function updatePaginationControls() {
+            document.getElementById('currentPage').textContent = currentPage + 1;
+            document.getElementById('totalPages').textContent = totalPages;
+            document.getElementById('prevPage').disabled = currentPage === 0;
+            document.getElementById('nextPage').disabled = currentPage >= totalPages - 1;
+        }
+
+         function changePage(delta) {
+            currentPage += delta;
+            requestData();
         }
 
         // Connect and request initial data
         socket.on('connect', function() {
             requestData();
-            console.log('Connected to server, requesting initial data');
         });
 
         // Handle initial data load
-        socket.on('init_qa_pairs', function(data) {
-            console.log('Received initial QA pairs:', data);
+         socket.on('init_qa_pairs', function(data) {
             const container = document.getElementById('qaContainer');
             container.innerHTML = ''; // Clear existing content
-            data.qa_pairs.forEach((qa) => {
+
+            data.items.forEach((qa) => {
                 container.innerHTML += createQAPairHTML(qa);
             });
+
+            totalPages = data.total_pages;
+            currentPage = data.current_page;
+            updatePaginationControls();
         });
 
         // Handle stats update

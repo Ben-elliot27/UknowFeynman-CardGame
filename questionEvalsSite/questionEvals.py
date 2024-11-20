@@ -9,22 +9,33 @@ class QAManager:
     def __init__(self):
         script_dir = os.path.dirname(__file__)
         self.sources = {
-            'main': str(os.path.join(script_dir, 'nlp_qa_pairs.json')),
-            'simple': str(os.path.join(script_dir, 'evaluation_simple_qa_pairs.json'))
+            'main': str(os.path.join(script_dir, 'questions', 'nlp_qa_pairs.json')),
+            'simple': str(os.path.join(script_dir, 'questions', 'evaluation_simple_qa_pairs.json')),
+            'mostViewed': str(os.path.join(script_dir, 'questions', 'MostViewedTwikis_qa.json')),
+            'atlasTalk': str(os.path.join(script_dir, 'questions', 'AtlasTalk_qa.json'))
         }
         self.validated_files = {
-            'main': str(os.path.join(script_dir, 'validated_qa_pairs_nlp.json')),
-            'simple': str(os.path.join(script_dir, 'validated_qa_pairs_simple.json'))
+            'main': str(os.path.join(script_dir, 'validated', 'validated_qa_pairs_nlp.json')),
+            'simple': str(os.path.join(script_dir, 'validated', 'validated_qa_pairs_simple.json')),
+            'mostViewed': str(os.path.join(script_dir, 'validated', 'validated_MostViewedTwikis.json')),
+            'atlasTalk': str(os.path.join(script_dir, 'validated', 'validated_AtlasTalk.json'))
         }
         self.votes_files = {
-            'main': str(os.path.join(script_dir, 'votes_nlp.json')),
-            'simple': str(os.path.join(script_dir, 'votes_simple.json'))
+            'main': str(os.path.join(script_dir, 'votes', 'votes_nlp.json')),
+            'simple': str(os.path.join(script_dir, 'votes', 'votes_simple.json')),
+            'mostViewed': str(os.path.join(script_dir, 'votes', 'MostViewedTwikis_votes.json')),
+            'atlasTalk': str(os.path.join(script_dir, 'votes', 'AtlasTalk_votes.json'))
         }
         self.stats_files = {
-            'main': str(os.path.join(script_dir, 'stats_nlp.json')),
-            'simple': str(os.path.join(script_dir, 'stats_simple.json'))
+            'main': str(os.path.join(script_dir, 'stats', 'stats_nlp.json')),
+            'simple': str(os.path.join(script_dir, 'stats', 'stats_simple.json')),
+            'mostViewed': str(os.path.join(script_dir, 'stats', 'stats_MostViewedTwikis.json')),
+            'atlasTalk': str(os.path.join(script_dir, 'stats', 'stats_AtlasTalk.json'))
         }
         self.REQUIRED_VOTES = 2
+        self.init_files()
+        self.ITEMS_PER_PAGE = 30
+        self.qa_cache = {}
         self.init_files()
 
     def init_files(self):
@@ -65,62 +76,66 @@ class QAManager:
         except FileNotFoundError:
             return []
 
-    def get_qa_pairs(self, tab):
-        votes_file = self.votes_files[tab]
-        votes = self.load_json(votes_file)
+    def get_qa_pairs(self, tab, page=0):
+        """Get paginated QA pairs with voting data"""
+        # Load or use cached QA pairs
+        if tab not in self.qa_cache:
+            qa_pairs = self.ensure_qa_ids(tab)
+            votes = self.load_json(self.votes_files[tab])
 
-        # Get QA pairs and ensure they have IDs
-        qa_pairs = self.ensure_qa_ids(tab)
-
-        # Enhance QA pairs with voting data
-        enhanced_pairs = []
-        for qa in qa_pairs:
-            qa_id = qa['id']
-            if qa_id in votes:
+            # Enhance QA pairs with voting data
+            enhanced_pairs = []
+            for qa in qa_pairs:
+                qa_id = qa['id']
                 qa_with_votes = {
                     **qa,
-                    'upvotes': len(votes[qa_id].get('upvotes', [])),
-                    'downvotes': len(votes[qa_id].get('downvotes', []))
+                    'upvotes': len(votes.get(qa_id, {}).get('upvotes', [])),
+                    'downvotes': len(votes.get(qa_id, {}).get('downvotes', []))
                 }
                 enhanced_pairs.append(qa_with_votes)
-            else:
-                enhanced_pairs.append({
-                    **qa,
-                    'upvotes': 0,
-                    'downvotes': 0
-                })
 
-        return enhanced_pairs
+            self.qa_cache[tab] = enhanced_pairs
+
+        # Calculate pagination
+        start_idx = page * self.ITEMS_PER_PAGE
+        end_idx = start_idx + self.ITEMS_PER_PAGE
+        total_items = len(self.qa_cache[tab])
+        total_pages = (total_items + self.ITEMS_PER_PAGE - 1) // self.ITEMS_PER_PAGE
+
+        return {
+            'items': self.qa_cache[tab][start_idx:end_idx],
+            'total_pages': total_pages,
+            'current_page': page,
+            'total_items': total_items
+        }
 
     def handle_vote(self, data):
         tab = data['tab']
         qa_id = data['id']
         is_upvote = data['is_upvote']
 
-        # Load current votes
-        votes_file = self.votes_files[tab]
-        votes = self.load_json(votes_file)
+        # Clear cache for this tab since votes are changing
+        if tab in self.qa_cache:
+            del self.qa_cache[tab]
 
-        # Initialize vote structure if needed
+        # Rest of the existing vote handling code...
+        votes = self.load_json(self.votes_files[tab])
+
         if qa_id not in votes:
             votes[qa_id] = {'upvotes': [], 'downvotes': []}
 
-        # Update votes
         vote_type = 'upvotes' if is_upvote else 'downvotes'
         votes[qa_id][vote_type].append(1)
 
-        # Check if threshold reached
         upvotes = len(votes[qa_id]['upvotes'])
         downvotes = len(votes[qa_id]['downvotes'])
         should_remove = (upvotes >= self.REQUIRED_VOTES) or (downvotes >= self.REQUIRED_VOTES)
         self.update_stats(tab, "NA")
 
-        # Handle removal if necessary
         if should_remove:
             source_file = self.sources[tab]
             qa_pairs = self.ensure_qa_ids(tab)
 
-            # Find and remove the QA pair with matching ID
             removed_qa = None
             for i, qa in enumerate(qa_pairs):
                 if qa['id'] == qa_id:
@@ -130,18 +145,15 @@ class QAManager:
             if removed_qa:
                 self.save_json(source_file, qa_pairs)
 
-                # If approved, save to validated file
                 if upvotes >= self.REQUIRED_VOTES:
                     validated_file = self.validated_files[tab]
                     validated_pairs = self.load_json(validated_file)
                     validated_pairs[qa_id] = removed_qa
                     self.save_json(validated_file, validated_pairs)
 
-                # Update statistics
                 self.update_stats(tab, upvotes >= self.REQUIRED_VOTES)
 
-        # Save updated votes
-        self.save_json(votes_file, votes)
+        self.save_json(self.votes_files[tab], votes)
 
         return {
             'id': qa_id,
@@ -181,12 +193,13 @@ def main(socketio):
     @socketio.on('request_initial_data')
     def handle_initial_data_request(data):
         tab = data['tab']
+        page = data.get('page', 0)
         try:
-            qa_pairs = qa_manager.get_qa_pairs(tab)
+            qa_data = qa_manager.get_qa_pairs(tab, page)
         except KeyError:
             emit('error', {'message': 'Invalid tab specified'})
             return
-        emit('init_qa_pairs', {'qa_pairs': qa_pairs})
+        emit('init_qa_pairs', qa_data)
 
     @socketio.on('request_stats')
     def handle_stats_request(data):

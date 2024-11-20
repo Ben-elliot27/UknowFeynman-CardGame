@@ -1,14 +1,6 @@
 [
   {
     "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AMAModules.txt",
-    "question": "What are Filler modules in AMA used for?",
-    "answer": "Filler modules in AMA are used to translate information contained inside AOD collection data to the AMA event data model.",
-    "type": "factual",
-    "created_at": "2024-11-06T11:23:35.884166",
-    "id": "0355044a-26a8-4ddd-919a-ab2bda7465f1"
-  },
-  {
-    "document": "C:\\Users\\benje\\PycharmProjects\\db_Twiki_CDS\\text\\AMAModules.txt",
     "question": "Where should all fillers be stored in AMAAthena?",
     "answer": "All fillers should be stored in the AMAAthena/Filler directory.",
     "type": "interpretative",

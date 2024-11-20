@@ -1,0 +1,27 @@
+{
+  "d133f95f-2406-439f-bbd7-d364fdb04d53": {
+    "upvotes": [],
+    "downvotes": [
+      1,
+      1
+    ]
+  },
+  "1": {
+    "upvotes": [
+      1
+    ],
+    "downvotes": []
+  },
+  "qa-a80401ca-7217-4ef2-a5bd-4037fd1ae3c2": {
+    "upvotes": [
+      1
+    ],
+    "downvotes": []
+  },
+  "a80401ca-7217-4ef2-a5bd-4037fd1ae3c2": {
+    "upvotes": [],
+    "downvotes": [
+      1
+    ]
+  }
+}

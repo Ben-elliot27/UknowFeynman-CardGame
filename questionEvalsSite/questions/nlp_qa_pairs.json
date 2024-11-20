@@ -1,14 +1,6 @@
 [
   {
     "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ATLASLocalRootBase2.txt",
-    "question": "For users who are using CernVM or ATLASLocalRootBase from cvmfs, what should they do to set up local overrides?",
-    "answer": "Users who are using CernVM or ATLASLocalRootBase from cvmfs should create a local directory by following these steps: mkdir $HOME/localConfig, cp $ATLAS_LOCAL_ROOT_BASE/exampleLocalConfig/* $HOME/localConfig/, then edit the files in $HOME/localConfig and insert the line 'export ALRB_localConfigDir=$HOME/localConfig' into ~/.bash_profile.",
-    "type": "factual",
-    "created_at": "2024-11-17T15:08:19.116520",
-    "id": "d133f95f-2406-439f-bbd7-d364fdb04d53"
-  },
-  {
-    "document": "C:/Users/benje/PycharmProjects/db_Twiki_CDS/text\\ATLASLocalRootBase2.txt",
     "question": "How does the ATLASLocalRootBase package relate to grid middleware and Rucio usage?",
     "answer": "The ATLASLocalRootBase package is available on all grid sites, Tier3s, CernVM, and cvmfs, offering a consistent user interface. Rucio usage is facilitated through commands like 'lsetup rucio' within the ATLASLocalRootBase environment.",
     "type": "interpretative",
