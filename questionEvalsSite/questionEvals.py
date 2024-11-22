@@ -6,35 +6,42 @@ import uuid
 from flask_socketio import emit
 
 class QAManager:
+    DEFAULT_ITEMS_PER_PAGE = 30
+    DEFAULT_REQUIRED_VOTES = 2
+
     def __init__(self):
         script_dir = os.path.dirname(__file__)
         self.sources = {
             'main': str(os.path.join(script_dir, 'questions', 'nlp_qa_pairs.json')),
             'simple': str(os.path.join(script_dir, 'questions', 'evaluation_simple_qa_pairs.json')),
             'mostViewed': str(os.path.join(script_dir, 'questions', 'MostViewedTwikis_qa.json')),
-            'atlasTalk': str(os.path.join(script_dir, 'questions', 'AtlasTalk_qa.json'))
+            'atlasTalk': str(os.path.join(script_dir, 'questions', 'AtlasTalk_qa.json')),
+            'IDF': str(os.path.join(script_dir, 'questions', 'IDF_BM25_Track.json'))
         }
         self.validated_files = {
             'main': str(os.path.join(script_dir, 'validated', 'validated_qa_pairs_nlp.json')),
             'simple': str(os.path.join(script_dir, 'validated', 'validated_qa_pairs_simple.json')),
             'mostViewed': str(os.path.join(script_dir, 'validated', 'validated_MostViewedTwikis.json')),
-            'atlasTalk': str(os.path.join(script_dir, 'validated', 'validated_AtlasTalk.json'))
+            'atlasTalk': str(os.path.join(script_dir, 'validated', 'validated_AtlasTalk.json')),
+            'IDF': str(os.path.join(script_dir, 'validated', 'validated_IDF.json'))
         }
         self.votes_files = {
             'main': str(os.path.join(script_dir, 'votes', 'votes_nlp.json')),
             'simple': str(os.path.join(script_dir, 'votes', 'votes_simple.json')),
             'mostViewed': str(os.path.join(script_dir, 'votes', 'MostViewedTwikis_votes.json')),
-            'atlasTalk': str(os.path.join(script_dir, 'votes', 'AtlasTalk_votes.json'))
+            'atlasTalk': str(os.path.join(script_dir, 'votes', 'AtlasTalk_votes.json')),
+            'IDF': str(os.path.join(script_dir, 'votes', 'IDF_votes.json'))
         }
         self.stats_files = {
             'main': str(os.path.join(script_dir, 'stats', 'stats_nlp.json')),
             'simple': str(os.path.join(script_dir, 'stats', 'stats_simple.json')),
             'mostViewed': str(os.path.join(script_dir, 'stats', 'stats_MostViewedTwikis.json')),
-            'atlasTalk': str(os.path.join(script_dir, 'stats', 'stats_AtlasTalk.json'))
+            'atlasTalk': str(os.path.join(script_dir, 'stats', 'stats_AtlasTalk.json')),
+            'IDF': str(os.path.join(script_dir, 'stats', 'stats_IDF.json'))
         }
-        self.REQUIRED_VOTES = 2
+        self.REQUIRED_VOTES = QAManager.DEFAULT_REQUIRED_VOTES
         self.init_files()
-        self.ITEMS_PER_PAGE = 30
+        self.ITEMS_PER_PAGE = QAManager.DEFAULT_ITEMS_PER_PAGE
         self.qa_cache = {}
         self.init_files()
 
@@ -195,6 +202,13 @@ def main(socketio):
         tab = data['tab']
         page = data.get('page', 0)
         try:
+            if tab == "IDF":
+                qa_manager.ITEMS_PER_PAGE = 100
+                qa_manager.REQUIRED_VOTES = 1
+            else:
+                qa_manager.ITEMS_PER_PAGE = QAManager.DEFAULT_ITEMS_PER_PAGE
+                qa_manager.REQUIRED_VOTES = QAManager.DEFAULT_REQUIRED_VOTES
+
             qa_data = qa_manager.get_qa_pairs(tab, page)
         except KeyError:
             emit('error', {'message': 'Invalid tab specified'})

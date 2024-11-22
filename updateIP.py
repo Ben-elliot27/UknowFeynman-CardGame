@@ -2,8 +2,8 @@ import requests
 import socket
 
 # GoDaddy API credentials
-API_KEY = "your_api_key"
-API_SECRET = "your_api_secret"
+API_KEY = "h1UeTTxoUDCK_AyDnvkBnVi8mefoYtcnzqC"
+API_SECRET = "Ka1vqr7Ay7F39ZRgRtYtKg"
 
 # Your domain and DNS record details
 DOMAIN = "www.uknowfeynman.co.uk"
